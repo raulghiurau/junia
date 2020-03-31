@@ -1,0 +1,15 @@
+I"<h1 id="here-we-go">Here we go</h1>
+
+<p>This is yet another test post! Let see if this will work. It seems like im not understanding the proper link between pages.</p>
+
+<div class="row">
+	<div class="col-md-6">
+		Test
+	</div>
+
+<div class="col-md-6">
+	Test 2
+</div>
+
+</div>
+:ET
