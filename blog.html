@@ -3,18 +3,16 @@ layout: page
 title: Blog
 ---
 
-{% include head.html %} 
-
-{% include nav.html %}
-
-
+<div class="container-fluid" style="padding-top: 80px; background-color: #c06c84;">
 <h1>New Blog</h1>
-
-<ul>
+<div class="col-md=12">
+<ul class="list-unstyled">
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {{ post.excerpt | truncate: 150 }} <a href="{{ post.url }}">read more</a>
     </li>
   {% endfor %}
 </ul>
+</div>
+</div>
