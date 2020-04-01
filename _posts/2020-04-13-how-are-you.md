@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Hi how are you?
-date: 2020-02-19 19:41 -0400
+date: 2020-01-19 19:41 -0400
 permalink: how-are-you
-author: 
+author: Raul
 tags: news
 category: blog
 ---
