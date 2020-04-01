@@ -7,9 +7,9 @@
 	<div class="container">
 
 <h1> {{ page.title }} </h1>
-<h6> Published: {{ page.date }} </h6>
+<h6> Date: {{ page.date | date: "%A %b %d, %Y" }} </h6>
 <h6> By: {{ page.author }}  </h6>
-<h6> Tags:  {{ page.tags }} </span></h6>
+<h6> Tags: {{ page.tags | 1 }}</h6>
 <h6> Category: <span class="badge"> {{ page.category }} </span> </h6>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hi How are you?
+title: Hi how are you?
 date: 2020-02-19 19:41 -0400
 permalink: how-are-you
 author: 
