@@ -1,7 +1,11 @@
 ---
 layout: post
-title: How are you
+title: Hi How are you?
 date: 2020-02-19 19:41 -0400
+permalink: how-are-you
+author: 
+tags: news
+category: blog
 ---
 
 How we got started at the beginning of getting in to marketing. This is the best platform for blogs and static websites. I dont need anything else. Now hosting is free, domain is the only thing you pay for.

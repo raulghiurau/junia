@@ -1,17 +1,27 @@
----
-
----
 
 {% include head.html %} 
 {% include nav.html %}
 {% include scripts.html %}
 
-<div class="container-fluid">
+<section class="bg-dark">
+	<div class="container">
+
+<h1> {{ page.title }} </h1>
+<h6> Published: {{ page.date }} </h6>
+<h6> By: {{ page.author }}  </h6>
+<h6> Tags:  {{ page.tags }} </span></h6>
+<h6> Category: <span class="badge"> {{ page.category }} </span> </h6>
+</div>
+
+</section>
+
+<div class="container">
 	<div class="row">
-		<div class="col-md-12" style="padding: 80px 0; background-color: #f8b195;">
+		<div class="col-md-6" style="padding: 50px 0;">
 			<div class="container">
-				{{ post.title }}
-				{{content}}
+				
+				{{ content }}
+
 			</div>
 		</div>
 	</div>
