@@ -16,7 +16,7 @@ description: this is the blog
 					<li style="margin-bottom: 20px;">
 						<h3 style="margin-top: 0;">
 
-<img src="{{ post.image | prepend: site.baseurl }}">
+<img src="{{ post.image | prepend: site.baseurl }}" style="max-width: 300px;">
 
 							<a href="{{ post.url }}">{{ post.title }}</a></h3>
 						{{ post.excerpt | truncate: 150 }} <a href="{{ post.url }}">continue reading...</a>
