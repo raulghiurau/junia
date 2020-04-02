@@ -8,23 +8,25 @@ description: this is the blog
 
 <section>
 	<div class="container">
-		<div class="row">
-		
-			<div class="col-md-12">
 				<ul class="list-unstyled">
 					{% for post in site.posts %}
-					<li style="margin-bottom: 20px;">
-						<h3 style="margin-top: 0;">
-
-<img src="{{ post.image | prepend: site.baseurl }}" style="max-width: 300px;">
-
-							<a href="{{ post.url }}">{{ post.title }}</a></h3>
-						{{ post.excerpt | truncate: 150 }} <a href="{{ post.url }}">continue reading...</a>
+				<div class="media">
+						<div class="media-left" style="margin-bottom: 20px;">
+							<a href="{{ post.url }}">
+					<img class="media-object"  src="{{ post.image | prepend: site.baseurl }}" style="max-width: 150px;">
+							</a>
+						</div>
+					<div class="media-body">
+					<li>
+						<h4 style="margin-top: 0;">
+							<a href="{{ post.url }}">{{ post.title }}</a></h4>
+							{{ post.excerpt | truncate: 50 }} 
+							<a href="{{ post.url }}"><br>continue reading...</a>
 					</li>
+					</div>
+				</div>
 					{% endfor %}
 				</ul>
-			</div>
-		</div>
 	</div>
 </section>
 

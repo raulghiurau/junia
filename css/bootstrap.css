@@ -4704,7 +4704,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  border-color: none;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -5373,7 +5373,7 @@ a.thumbnail.active {
   zoom: 1;
 }
 .media-body {
-  width: 10000px;
+  width: auto;
 }
 .media-object {
   display: block;
