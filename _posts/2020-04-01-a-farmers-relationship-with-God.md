@@ -1,4 +1,5 @@
 ---
+layout: post
 title: A farmers relationship to God
 date: 2020-04-01 2300
 author: Raul
