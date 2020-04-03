@@ -67,8 +67,12 @@ section {
     padding: 20px ;
     text-align: center;
     margin-top: 40px;
-    background-color: #a8a7a7;
-    color: white;
+    color: #fff;
+    background-image: url("/img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center;
 }
 
 .footer {
