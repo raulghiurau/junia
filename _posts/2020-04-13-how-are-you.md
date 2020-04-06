@@ -8,6 +8,7 @@ tags: news
 category: blog
 image: /img/portfolio/4.jpg
 excerpt: A farmer plows his field in the evening and does not know that it is just not going to work.
+duration: 4min
 ---
 
 How we got started at the beginning of getting in to marketing. This is the best platform for blogs and static websites. I dont need anything else. Now hosting is free, domain is the only thing you pay for.

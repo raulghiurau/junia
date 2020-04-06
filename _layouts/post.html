@@ -4,14 +4,29 @@
 {% include scripts.html %}
 
 <section class="bg-dark">
-	<div class="container">
 
-<h1> {{ page.title }} </h1>
-<h6> Published: {{ page.date | date: "%A %b %d, %Y" }} </h6>
-<h6> By: {{ page.author }}  </h6>
-<h6> Tags: {{ page.tags }}</h6>
-<h6> Category: <span class="badge"> {{ page.category }} </span> </h6>
-<h6> Read time:  {{ page.duration }} </h6>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12 mb-5">
+				<h2> {{ page.title }} </h2>
+				<h6> {{ page.excerpt }} </h6>
+				<p> <i class="far fa-clock"></i>  {{ page.duration }}  min</p>
+
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<p> <i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </p>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<p> <i class="fas fa-user"></i> {{ page.author }}  </p>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<p> <i class="fas fa-tag"></i>  {{ page.tags }} </p>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<p> <i class="fas fa-archive"></i> {{ page.category }} </p>
+			</div>
+		</div>
+	</div>
 </div>
 
 </section>

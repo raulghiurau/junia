@@ -5,7 +5,9 @@ date: 2020-04-01 2300
 author: Raul
 category: story
 image: img/portfolio/3.jpg
-excerpt: A farmer plows his field
+excerpt: When does a farmer do his part and God does His.
+duration: 33
+tags: farmer, news
 
 ---
 
