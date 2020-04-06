@@ -7,7 +7,7 @@ author: Raul
 tags: news
 category: blog
 image: /img/portfolio/4.jpg
-excerpt: My own openions on all things.
+excerpt: My own openions on things.
 duration: 4
 ---
 
