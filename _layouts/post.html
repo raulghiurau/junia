@@ -9,9 +9,9 @@
 		<div class="row text-center">
 			<div class="col-md-12 mb-5">
 				<h2> {{ page.title }} </h2>
-				<p> <i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </p>
+				<p> <i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} • <i class="far fa-clock"></i>  {{ page.duration }}  min </p>
 				<h6> {{ page.excerpt }} </h6>
-				<p> <i class="far fa-clock"></i>  {{ page.duration }}  min</p>
+		
 			</div>
 			<div class="col-lg-4 col-xs-4">
 				<p> <i class="fas fa-user"></i> {{ page.author }}  </p>
