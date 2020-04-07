@@ -113,12 +113,14 @@ aside {
     }
     .nav {
         > li {
+        text-align: center;
             > a,
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 color: $theme-dark;
+                text-align: center;
                 &:hover {
                     color: $theme-primary;
                 }

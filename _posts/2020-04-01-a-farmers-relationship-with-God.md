@@ -8,7 +8,6 @@ image: img/portfolio/3.jpg
 excerpt: When does a farmer do his part and God does His.
 duration: 33
 tags: farmer, news
-
 ---
 
 ### Farmer story
