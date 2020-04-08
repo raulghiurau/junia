@@ -258,7 +258,7 @@ header {
     margin: 0 auto;
     .portfolio-box-caption {
         color: white;
-        opacity: 0;
+        opacity: 1;
         display: block;
         background: rgba( $theme-primary, .9 );
         position: absolute;
@@ -277,30 +277,31 @@ header {
             .project-name {
                 @include sans-serif-font;
                 padding: 0 15px;
+                opacity: 1;
             }
             .project-category {
                 text-transform: uppercase;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 20px;
             }
             .project-name {
-                font-size: 18px;
+                font-size: 14px;
             }
         }
     }
     &:hover {
         .portfolio-box-caption {
-            opacity: 1;
+            opacity: .9;
         }
     }
     @media (min-width: 768px) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
                 .project-name {
-                    font-size: 22px;
+                    font-size: 12px;
                 }
             }
         }
