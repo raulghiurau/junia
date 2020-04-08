@@ -1,14 +1,14 @@
 ---
 layout: post
-title: What we do
+title: What does a marketing consultant do?
 date: 2020-02-19 19:41 -0400
-permalink: what-we-do
+permalink: what-does-a-marketing-consultant-do
 author: Raul
-tags: news, updates, reviews
+tags: marketing, consultant
 category: blog
 image: /img/portfolio/1.jpg
-excerpt: A farmer plows his field
-duration: 5
+excerpt: A few areas of expertise that marketing conslutants have.
+duration: 3
 ---
 
 Marketing

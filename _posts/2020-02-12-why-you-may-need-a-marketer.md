@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Jekyll updates
+title: Why you may need a marketing consultant
 date: 2020-03-02 19:41 -0400
-permalink: why-we-do
+permalink: why-you-may-need-a-marketer
 author: Raul
-tags: news
+tags: marketing, consulting
 category: blog
 image: /img/portfolio/2.jpg
-excerpt: Learning Jekyll is fun. This is where I am.
+excerpt: Quick checklist that will help you determin if you should start looking for a marketing consultant.
 duration: 2
 ---
 

@@ -1,26 +1,24 @@
 ---
 layout: post
-title: Ideas to make this site about
+title: What is branding?
 date: 2020-04-05 19:41 -0400
-permalink: ideas 
+permalink: branding 
 author: Raul
-tags: potential
+tags: branding, marketing, consulting
 category: blog
 image: /img/posts/sunset.jpg
-excerpt: My thoughts on what I need to do.
-duration: 6
+excerpt: Demistifing what is branding
+duration: 3
 ---
 
-First I would like to point out that I am really moved and appreciative of the ministry Ken Ham is doing and the whole Answeres in Genesis. His dedication to the Word and explaining everything about the origin of the world is truth and fascinating. With that said I wish to get involved in making movies and tv shows for this ministry.  
+> Your logo is only a piece of of what a brand really is. 
 
-### Idea 1
+What is branding?
 
-Hollywood and their campaign to corupt the morals and values of Christans
+Why is branding important?
 
-### Idea 2
+How to brand?
 
-Marketing
+What do you need for a successful brand launch?
 
-### Idea 3
 
-Pesonal Finding and thoughts
