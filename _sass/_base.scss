@@ -104,8 +104,8 @@ aside {
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-weight: 00;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);

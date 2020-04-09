@@ -11,24 +11,10 @@ excerpt: Quick checklist that will help you determin if you should start looking
 duration: 2
 ---
 
-#### Update: 4.6.2020
+### Reason #1
 
-Things to learn
-1. Images
-2. Categories
-3. Tags
-4. Make related categories / tags / posts
+You have a product or services and need to get it to the right people.
 
-#### Update: 4.5.2020
+A marketing consultant should be able to get you from point A to point B of where you want to be. 
 
-There is a lot of meta data in the front matter
-
-#### Update: 4.3.2020
-
-Ive been trying to see how the images are formateed.
-
-#### Update: 4.1.2020
-
-I found a new way 🚨🚨🥁 This is a new post. I want to see if it accepts emoji. 🤩🤩
-
-What about images? Nope. No way to insert images. 
+### Reason #2
