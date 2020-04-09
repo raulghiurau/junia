@@ -8,18 +8,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2> {{ page.title }} </h2>
-				<h5> {{ page.excerpt }} </h5>
-				<h5> <i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} • <i class="far fa-clock"></i>  {{ page.duration }}  min </h5>
-			</div>
-			<div class="col-lg-4 col-xs-4">
-				<h6> <i class="fas fa-user"></i> {{ page.author }}  </h6>
-			</div>
-			<div class="col-lg-4 col-xs-4">
-				<h6> <i class="fas fa-tag"></i>  {{ page.tags }} </h6>
-			</div>
-			<div class="col-lg-4 col-xs-4">
-				<h6> <i class="fas fa-archive"></i> {{ page.category }} </h6>
+				<h6><i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </h6>
+				<h3> {{ page.title }} </h3>
+				<p> {{ page.excerpt }} </p>
+				<h6> <i class="fas fa-user"></i> {{ page.author }} • <i class="fas fa-archive"></i> {{ page.category }} • <i class="far fa-clock"></i>  {{ page.duration }}  min </h6>
 			</div>
 		</div>
 	</div>
