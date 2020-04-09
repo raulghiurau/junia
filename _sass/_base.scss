@@ -65,8 +65,8 @@ section {
 
 .section-post {
     padding: 80px 0 20px 0;
-    background-color: $theme-dark;
-    color: white;
+    background-color: #fff;
+    color: black;
 }
 
 .heading {
@@ -74,7 +74,7 @@ section {
     text-align: center;
     margin-top: 40px;
     color: #fff;
-    background-image: url("/img/header.jpg");
+    background-image: url("/img/web.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
@@ -82,7 +82,7 @@ section {
 }
 
 .footer {
-    background-image: url("/img/header.jpg");
+    background-color: #232323;
     color: #fff;
 }
 
