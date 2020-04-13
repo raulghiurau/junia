@@ -4,9 +4,9 @@ title: How to select a good marketing consultant?
 date: 2020-01-19 19:41 -0400
 permalink: selecting-a-good-marketer
 author: Raul
-tags: consulting, marketing
-category: blog
-image: /img/portfolio/4.jpg
+tags: results tracking strategy 
+categories: good, field
+image: /img/assets/product.jpg
 excerpt: The 5 things you need to look for when looking to consult with a marketing group.
 duration: 4
 ---

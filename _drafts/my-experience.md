@@ -4,9 +4,9 @@ title: My marketing consulting experience
 date: 2019-05-21 4:00
 permalink: my-experience-consulting
 author: Raul
-tags: consulting, marketing
-category: blog
-image: /img/portfolio/5.jpg
+tags: consulting | marketing
+categories: introduction
+image: /img/assets/product.jpg
 excerpt: Starting a marketing consulting business and what I learned
 duration: 8
 published: false

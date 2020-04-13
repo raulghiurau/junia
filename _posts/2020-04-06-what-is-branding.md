@@ -4,10 +4,10 @@ title: What is branding?
 date: 2020-04-05 19:41 -0400
 permalink: branding 
 author: Raul
-tags: branding, marketing, consulting
-category: blog
-image: /img/services/sunset.jpg
-excerpt: Demistifing what is branding
+tags: branding
+categories: branding
+image: /img/assets/product.jpg
+excerpt: Demistifing what branding means
 duration: 3
 ---
 

@@ -6,30 +6,71 @@ description: What we've been up to
 
 ---
 
+<!-- <a href="/categories.html">categories</a> -->
+
 <section>
 	<div class="container">
-		<div class="col-md-12">
-				<ul class="list-unstyled">
-					{% for post in site.posts %}
+		<div class="col-md-8 col-sm-8">
+			<ul class="list-unstyled">
+				{% for post in site.posts %}
 				<div class="media">
-						<div class="media-left" style="margin-bottom: 20px;">
-							<a href="{{ post.url }}">
-					<img class="media-object"  src="{{ post.image | prepend: site.baseurl }}" style="max-width: 150px;">
-							</a>
-						</div>
-					<div class="media-body">
-					<li>
-						<h3 style="margin-top: 0;">
-							<a href="{{ post.url }}">{{ post.title }}</a></h3>
-							<p><span style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} </span><br>
-						  	</p>	
-					</li>
+					<div class="media-left" style="margin-bottom: 20px;">
+						<a href="{{ post.url }}">
+							<img class="media-object"  src="{{ post.image | prepend: site.baseurl }}" style="max-width: 200px;">
+						</a>
 					</div>
-				</div>
+					<div class="media-body">
+						<li>
+							<h3 style="margin-top: 0;">
+								<a href="{{ post.url }}">{{ post.title }}</a></h3>
+								<p><span style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} </span><br>
+								</p>	
+							</li>
+						</div>
+					</div>
 					{% endfor %}
 				</ul>
 			</div>
-	</div>
-</section>
+			<div class="col-md-4 col-sm-4">
+				<div class="row">
+					<h5> Tags </h5>
+					<ul class="list-unstyled">
+						{% for post in site.posts %}
+						<li class="badge" >
+							<a href="{{ post.url }}" style="color: #fff;">
+							{{ post.tags }} 
+						</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="row">
+					<h5>Categories </h5>
+					<ul class="list-unstyled">
+						{% for post in site.posts  %}
+						<li class="badge">
+							<a href="{{ post.url }}" style="color: #fff;">
+							{{ post.categories }}
+						</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="row">
+					<h5>Author </h5>
+					<ul class="list-unstyled">
+						{% for post in site.posts  %}
+						<li class="badge">
+							<a href="{{ post.url }}" style="color: #fff;">
+							{{ post.author }}
+						</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+
+
+			</div>
+		</section>
 
 
