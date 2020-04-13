@@ -6,7 +6,7 @@ permalink: branding
 author: Raul
 tags: branding, marketing, consulting
 category: blog
-image: /img/posts/sunset.jpg
+image: /img/services/sunset.jpg
 excerpt: Demistifing what is branding
 duration: 3
 ---
