@@ -3,9 +3,8 @@ backend:
   name: github
   repo: raulghiurau/junia # Path to your GitHub repository
 
-# backend:
-#   name: git-gateway
-#   branch: master # Branch to update (optional; defaults to master)
+# This line should *not* be indented
+publish_mode: editorial_workflow
 
 media_folder: "img/assets"
 public-folder: "uploads"
