@@ -22,5 +22,9 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Exerpt', name: 'exerpt', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { lable: 'Author', name: 'author', widget: 'string' }
+      - { lable: 'Duration', name: 'duration', widget: 'string' }
+      - { lable: 'Categories', name: 'categories', widget: 'string' }
+      - { lable: 'Tags', name: 'tags', widget: 'string' }
