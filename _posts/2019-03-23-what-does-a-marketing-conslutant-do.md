@@ -7,7 +7,7 @@ author: Raul
 tags: design
 category: design
 image: /img/assets/product.jpg
-excerpt: A few areas of expertise that marketing conslutants have.
+excerpt: A few areas of expertise that marketing consultants have.
 duration: 3
 ---
 
