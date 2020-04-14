@@ -9,7 +9,7 @@ permalink: why-you-may-need-a-marketer
 duration: 2
 category: marketing
 tags: consulting
-image: /img/assets/product.jpg
+image: /img/assets/photo.jpg
 ---
 ### Reason #1
 

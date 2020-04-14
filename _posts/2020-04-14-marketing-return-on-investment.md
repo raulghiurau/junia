@@ -7,8 +7,11 @@ author: Raul
 duration: "3"
 category: marketing
 tags: Consulting, tags
-image: /img/assets/design.jpg
+image: /img/assets/roi.jpg
 ---
-The one thing that every business owners wants to know is what will my growth be from hiring a marketing consultant? 
+
+The one thing that every business owner wants is to know what will my return be from hiring a marketing consultant? 
 
 This is an important question because you want to get what you pay for.
+
+### Keep a metric

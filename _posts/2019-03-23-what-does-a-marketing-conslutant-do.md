@@ -6,7 +6,7 @@ permalink: what-does-a-marketing-consultant-do
 author: Raul
 tags: design
 category: design
-image: /img/assets/product.jpg
+image: /img/assets/brand.jpg
 excerpt: A few areas of expertise that marketing consultants have.
 duration: 3
 ---
