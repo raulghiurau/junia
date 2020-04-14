@@ -1,15 +1,14 @@
 # config.yml
-
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/uploads'
-collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    fields:
-      - { name: Title }
+  name: github
+  repo: raulghiurau/junia # Path to your GitHub repository
+
+# backend:
+#   name: git-gateway
+#   branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "img/assets"
+public-folder: "uploads"
 
 collections:
   - name: 'blog'
