@@ -25,6 +25,6 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { lable: 'Author', name: 'author', widget: 'string' }
       - { lable: 'Duration', name: 'duration', widget: 'string' }
-      - { lable: 'Categories', name: 'categories', widget: 'string' }
+      - { lable: 'Category', name: 'category', widget: 'string' }
       - { lable: 'Tags', name: 'tags', widget: 'string' }
       - { lable: 'Image', name: 'image', widget: 'image', required: false }

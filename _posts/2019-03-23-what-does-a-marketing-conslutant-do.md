@@ -5,7 +5,7 @@ date: 2020-02-19 19:41 -0400
 permalink: what-does-a-marketing-consultant-do
 author: Raul
 tags: design
-categories: design
+category: design
 image: /img/assets/product.jpg
 excerpt: A few areas of expertise that marketing conslutants have.
 duration: 3

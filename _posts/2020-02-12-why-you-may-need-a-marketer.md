@@ -5,7 +5,7 @@ date: 2020-03-02 19:41 -0400
 permalink: why-you-may-need-a-marketer
 author: Raul
 tags: consulting
-categories: marketing
+category: marketing
 image: /img/assets/product.jpg
 excerpt: Quick checklist that will help you determin if you should start looking for a marketing consultant.
 duration: 2

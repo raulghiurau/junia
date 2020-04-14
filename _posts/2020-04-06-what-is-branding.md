@@ -5,7 +5,7 @@ date: 2020-04-05 19:41 -0400
 permalink: branding 
 author: Raul
 tags: branding
-categories: branding
+category: branding
 image: /img/assets/product.jpg
 excerpt: Demistifing what branding means
 duration: 3
