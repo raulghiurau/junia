@@ -27,4 +27,4 @@ collections:
       - { lable: 'Duration', name: 'duration', widget: 'string' }
       - { lable: 'Categories', name: 'categories', widget: 'string' }
       - { lable: 'Tags', name: 'tags', widget: 'string' }
-      - { lable: 'Image', name: 'image', widget: 'image' }
+      - { lable: 'Image', name: 'image', widget: 'image', required: false }
