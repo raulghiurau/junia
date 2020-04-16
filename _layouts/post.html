@@ -8,10 +8,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h6><i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </h6>
-				<h2 class="mt-1 mb-1"><b> {{ page.title }} </b></h2>
-				<h5 class="mb-1" style="line-height: 1.5em;"> {{ page.excerpt }} </h5>
-				<h6 style="color: #355c7d;"> <i class="fas fa-user"></i> {{ page.author }} • <i class="fas fa-archive"></i> {{ page.category }} • <i class="far fa-clock"></i>  {{ page.duration }} min • <i class="fas fa-tag"></i> {{ page.tags }}</h6>
+				<h6 style="font-size: 12px; padding-top: 10px;"><i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </h6>
+				<h2 class="mb-1"><b> {{ page.title }} </b></h2>
+				<h5 style="font-size: 12px;"> {{ page.excerpt }} </h5>
+				<h6 style="color: #355c7d; font-size: 12px;"> <i class="fas fa-user"></i> {{ page.author }} • <i class="fas fa-archive"></i> {{ page.category }} • <i class="far fa-clock"></i>  {{ page.duration }} min • <i class="fas fa-tag"></i> {{ page.tags }}</h6>
 			</div>
 		</div>
 	</div>
@@ -20,35 +20,39 @@
 <div class="container">
 	<div class="row" style="margin-top: 30px; margin-bottom: 30px;">
 		<div class="col-md-8" style="max-width: 900px;">
-		
-		<img src="{{ page.image }}" class="img-responsive mb-4">
 
-				{{ content }}
+			<img src="{{ page.image }}" class="img-fluid mb-4">
+
+			{{ content }}
 
 		</div>
-<hr class="hidden-md mb-5 mt-5">
+
+		
+
 		<div class="col-md-4 mb-4">
-		<h3 class="mt-0"> Related Posts </h3>
-		<ul class="list-unstyled">
+
+			<hr class="d-md-none mb-4 mt-4">
+			<h3> Related Posts </h3>
+			<ul class="list-unstyled">
 				{% for post in site.posts %}
 				<div class="media">
 					<div class="media-left" style="margin-bottom: 20px;">
 						<a href="{{ post.url }}">
-							<img class="media-object" src="{{ post.image | prepend: site.baseurl }}" style="max-width: 100px;">
+							<img class="align-self-center mr-3" src="{{ post.image | prepend: site.baseurl }}" style="max-width: 100px;">
 						</a>
 					</div>
 					<div class="media-body">
 						<li>
-							<h5 style="margin-top: 0;">
+							<h6 style="margin-top: 0; font-size: 13px;">
 								<a href="{{ post.url }}">{{ post.title }}</a>
-							</h5>
-								<p><span style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} </span><br>
-								</p>	
-							</li>
-						</div>
+							</h6>
+							<p><span style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} </span><br>
+							</p>	
+						</li>
 					</div>
-					{% endfor %}
-				</ul>
+				</div>
+				{% endfor %}
+			</ul>
 		</div>
 	</div>
 </div>

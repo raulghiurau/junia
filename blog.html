@@ -3,26 +3,25 @@ layout: page
 title: Blog
 permalink: blog
 description: What we've been up to
-
 ---
-
 
 <section>
 	<div class="container">
-		<div class="col-md-8 col-sm-8">
-			<ul class="list-unstyled">
-				{% for post in site.posts %}
-				<div class="media">
-					<div class="media-left" style="margin-bottom: 20px;">
-						<a href="{{ post.url }}">
-							<img class="media-object" src="{{ post.image | prepend: site.baseurl }}" style="max-width: 100px;">
-						</a>
-					</div>
-					<div class="media-body">
-						<li>
-							<h4 style="margin-top: 0;">
-								<a href="{{ post.url }}">{{ post.title }}</a>
-							</h4>
+		<div class="row">
+			<div class="col-md-8 ">
+				<ul class="list-unstyled">
+					{% for post in site.posts %}
+					<div class="media">
+						<div class="media-left" style="margin-bottom: 20px;">
+							<a href="{{ post.url }}">
+								<img class="align-self-center mr-3" src="{{ post.image | prepend: site.baseurl }}" style="max-width: 130px;">
+							</a>
+						</div>
+						<div class="media-body">
+							<li>
+								<h4 style="margin-top: 0;">
+									<a href="{{ post.url }}">{{ post.title }}</a>
+								</h4>
 								<p><span style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} </span><br>
 								</p>	
 							</li>
@@ -31,46 +30,42 @@ description: What we've been up to
 					{% endfor %}
 				</ul>
 			</div>
-			<div class="col-md-4 col-sm-4">
-				<div class="row">
-					<h5> Tags </h5>
-					<ul class="list-unstyled">
-						{% for post in site.posts %}
-						<li class="badge" >
-							<a href="{{ post.url }}" style="color: #fff;">
-							{{ post.tags }} 
+			<div class="col-md-4 ">
+				<h5> Tags </h5>
+				<ul class="list-unstyled">
+					{% for post in site.posts %}
+					<li class="badge badge-secondary">
+						<a href="{{ post.url }}" style="color: #fff;">
+							{{ post.tags | join: ', ' }} 
 						</a>
-						</li>
-						{% endfor %}
-					</ul>
-				</div>
-				<div class="row">
-					<h5>Categories </h5>
-					<ul class="list-unstyled">
-						{% for post in site.posts  %}
-						<li class="badge">
-							<a href="{{ post.url }}" style="color: #fff;">
-							{{ post.categories }}
+					</li>
+					{% endfor %}
+				</ul>
+				<h5>Categories </h5>
+				<ul class="list-unstyled">
+					{% for post in site.posts  %}
+					<li class="badge badge-secondary">
+						<a href="{{ post.url }}" style="color: #fff;">
+							{{ post.categories | join: ', ' }}
 						</a>
-						</li>
-						{% endfor %}
-					</ul>
-				</div>
-				<div class="row">
-					<h5>Author </h5>
-					<ul class="list-unstyled">
-						{% for post in site.posts  %}
-						<li class="badge">
-							<a href="{{ post.url }}" style="color: #fff;">
-							{{ post.author }}
+					</li>
+					{% endfor %}
+				</ul>
+				
+				<h5>Publishing Author </h5>
+				<ul class="list-unstyled">
+					{% for post in site.posts  %}
+					<li class="badge badge-secondary">
+						<a href="{{ post.url }}" style="color: #fff;">
+							{{ post.author | join: ', ' }}
 						</a>
-						</li>
-						{% endfor %}
-					</ul>
-				</div>
-
-
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
-		</section>
+		</div>
+	</div>
+
+</section>
 
 
