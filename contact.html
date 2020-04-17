@@ -6,32 +6,37 @@ description: Reach out to get started.
 ---
 
 <section class="pt-4">
-	<div class="container text-center" s>
+	<div class="container">
 
-		<p> Fill out the information below and we will be in touch! </p>
+		<p class="text-center"> Fill out the information below and we will be in touch! </p>
 
-		<div class="col-md-6 offset-md-3 text-center">
+		<div class="col-md-6 offset-md-3">
 			<form name="contact" data-netlify="true" action="/pages/success.html">
 				<div class="form-group">
-				
+					<label for="formGroupExampleInput"> Name</label>
 					<input type="text" name="name" class="form-control" placeholder="Enter your name" aria-describedby="sizing-addon1">
 				</div>
 				<div class="form-group">
-		
+				<label for="formGroupExampleInput"> Email</label>
 					<input type="text" name="email" class="form-control" placeholder="Enter an email" aria-describedby="sizing-addon2">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div>
 				<div class="form-group">
-					
+					<label for="formGroupExampleInput"> Phone</label>
 					<input type="text" name="phone" class="form-control" placeholder="Enter your phone" aria-describedby="sizing-addon2">
 				</div>
 				
-				<h5> Select area of interest </h5>
+				<p> Select area of interest </p>
 
-				<div class="text-center">	
-					<input class="form-check-input" type="checkbox" value="brand" id="defaultCheck1">
-					<label class="form-check-label" for="defaultCheck1"> Branding </label> <br>
-					<input class="form-check-input" type="checkbox" value="design" id="defaultCheck2">
+				<div class="form-check form-check-inline mb-3">	
+					<input class="form-check-input ml-2" type="checkbox" value="brand" id="defaultCheck1">
+					<label class="form-check-label" for="defaultCheck1"> Branding </label> 
+					<input class="form-check-input ml-2" type="checkbox" value="design" id="defaultCheck2">
 					<label class="form-check-label" for="defaultCheck2"> Design </label>
+					<input class="form-check-input ml-2" type="checkbox" value="Ecommerce" id="defaultCheck3">
+					<label class="form-check-label" for="defaultCheck3"> Ecommerce </label>
+					<input class="form-check-input ml-2" type="checkbox" value="Marketing" id="defaultCheck4">
+					<label class="form-check-label" for="defaultCheck4"> Marketing </label>
 				</div>	
 				<textarea class="form-control mb-4" name="text" placeholder="Message" rows="3"></textarea>
 				<input class="btn btn-primary btn-xl" type="submit" value="Send">
