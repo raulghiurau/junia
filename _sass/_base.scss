@@ -96,10 +96,6 @@ aside {
 
 // Navigation
 
-.dropdown-menu {
-    
-}
-
 .navbar-collapse {
     border-color: white;
     @include sans-serif-font;
@@ -107,7 +103,7 @@ aside {
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
-        font-weight: 00;
+        font-weight: 200;
         // text-transform: uppercase;
         &:hover,
         &:focus {
@@ -183,10 +179,19 @@ aside {
     border-color: #f8f9fa;
 }
 
-
-.dropdown-item {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+.navbar-light .navbar-nav .nav-link {
+    color: $theme-primary;
 }
+
+.dropdown-menu {
+    color: $theme-primary;
+    text-align: center;
+  
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
 
 // Homepage Header
 
