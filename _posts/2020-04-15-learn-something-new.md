@@ -9,7 +9,11 @@ category: Updates
 tags: "Updates "
 image: /img/assets/learn.jpeg
 ---
-### update 4.16.20
+### Update 4.17.20
+
+Got the favicon to change and reflect on safari icons.
+
+### Update 4.16.20
 
 Update the editor to atom. Pretty neat to be able to push directly from the Html editor. I need to get better 
 
