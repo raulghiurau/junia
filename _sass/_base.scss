@@ -68,15 +68,15 @@ section {
 }
 
 .heading {
-    padding: 20px ;
+    padding: 120px 0 120px 0;
     text-align: center;
-    margin-top: 56px;
+    // margin-top: 56px;
     color: #fff;
-    background-color: $theme-primary;
+    background-image: url('../img/header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-position: center;
+    background-blend-mode: darken;
+    background-position: top;
 }
 
 .footer {
@@ -95,7 +95,8 @@ aside {
 
 // Navigation
 
-.navbar-collapse {
+.navbar-default {
+    top: 0;
     border-color: white;
     @include sans-serif-font;
     @include transition-all;
@@ -175,11 +176,12 @@ aside {
 }
 
 .navbar-light .navbar-toggler {
-    border-color: #f8f9fa;
+    border-color: transparent;
+    color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $theme-primary;
+    color: $theme-light;
 }
 
 .dropdown-menu {
@@ -190,6 +192,10 @@ aside {
 
 // Homepage Header
 
+.mask  {
+  background-color: rgba(0, 0, 0, .3);
+}
+
 header {
     position: relative;
     width: 100%;
@@ -199,7 +205,7 @@ header {
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 3px black;
+    // text-shadow: 1px 1px 3px black;
     .header-content {
         position: relative;
         text-align: center;
@@ -225,6 +231,7 @@ header {
     }
     @media (min-width: 768px) {
         min-height: 100%;
+        background-color: rgba(0, 0, 0, .3);
         .header-content {
             position: absolute;
             top: 50%;
