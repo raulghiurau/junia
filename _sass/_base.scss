@@ -62,16 +62,16 @@ section {
 }
 
 .section-post {
-    padding: 60px 0 10px 0;
-    background-color: #f2f2f2;
-    color: black;
-}
+    padding: 120px 0 120px 0;
+
+  }
 
 .heading {
-    padding: 120px 0 120px 0;
+    padding: 180px 0 180px 0;
     text-align: center;
     // margin-top: 56px;
     color: #fff;
+    text-shadow: 1px 1px 3px black;
     background-image: url('../img/header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,7 +96,6 @@ aside {
 // Navigation
 
 .navbar-default {
-    top: 0;
     border-color: white;
     @include sans-serif-font;
     @include transition-all;
@@ -113,6 +112,7 @@ aside {
     .nav {
         > li {
         text-align: center;
+        margin-left: 20px;
             > a,
             > a:focus {
                 text-transform: uppercase;
@@ -137,7 +137,7 @@ aside {
         }
     }
     @media (min-width: 768px) {
-    //    background-color: transparent;
+       background-color: transparent;
     //    border-color: transparent;
         .navbar-header .navbar-brand {
             color: #2a363b;
@@ -177,11 +177,11 @@ aside {
 
 .navbar-light .navbar-toggler {
     border-color: transparent;
-    color: #fff;
+    color: #333;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $theme-light;
+    color: $theme-dark;
 }
 
 .dropdown-menu {
@@ -192,10 +192,6 @@ aside {
 
 // Homepage Header
 
-.mask  {
-  background-color: rgba(0, 0, 0, .3);
-}
-
 header {
     position: relative;
     width: 100%;
@@ -205,7 +201,7 @@ header {
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
-    // text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 3px black;
     .header-content {
         position: relative;
         text-align: center;
