@@ -58,7 +58,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .section-post {
@@ -67,9 +67,8 @@ section {
   }
 
 .heading {
-    padding: 180px 0 180px 0;
+    padding: 100px 0 100px 0;
     text-align: center;
-    // margin-top: 56px;
     color: #fff;
     text-shadow: 1px 1px 3px black;
     background-image: url('../img/header.jpg');
@@ -118,7 +117,7 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: #fff;
                 text-align: center;
                 &:hover {
                     color: $theme-primary;
@@ -148,7 +147,7 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: #474747;
+            color: #fff;
             &:hover {
                 color: #474747;
             }
