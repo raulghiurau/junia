@@ -7,8 +7,12 @@ author: Raul
 duration: "4"
 category: Updates
 tags: "Updates "
-image: /img/assets/learn.jpeg
+image: ""
 ---
+### Update 5.9.20
+
+Implemented a email subscription
+
 ### Update 4.17.20
 
 Got the favicon to change and reflect on safari icons.
