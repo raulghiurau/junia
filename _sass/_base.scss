@@ -62,12 +62,13 @@ section {
 }
 
 .section-post {
-    padding: 120px 0 120px 0;
-
+    color: #fff;
+    background-size: cover;
+    background-position: center;
   }
 
 .heading {
-    padding: 100px 0 100px 0;
+    // padding: 100px 0 100px 0;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 3px black;
@@ -75,11 +76,11 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
-    background-position: top;
+    background-position: bottom;
 }
 
 .footer {
-    background-color: #4c4c4c;
+    background-color: #323232;
     color: #fff;
     padding: 30px 0;
 }
@@ -94,16 +95,16 @@ aside {
 
 // Navigation
 
-
 .navbar-default {
-    border-color: white;
+    background-color: white;
+    border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 200;
-        // text-transform: uppercase;
+        text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -118,7 +119,6 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: #fff;
                 text-align: center;
                 &:hover {
                     color: $theme-primary;
@@ -137,18 +137,20 @@ aside {
         }
     }
     @media (min-width: 768px) {
+        background-color: transparent;
+        border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: #2a363b;
+            color: rgba(white, .7);
             &:hover,
             &:focus {
-                color: #474747;
+                color: white;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: #fff;
+            color: rgba(white, .7);
             &:hover {
-                color: #474747;
+                color: white;
             }
         }
         &.affix {
@@ -173,23 +175,29 @@ aside {
     }
 }
 
-.navbar-light .navbar-toggler {
-    border-color: transparent;
-    color: #333;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: $theme-dark;
-}
-
-.dropdown-menu {
-    color: $theme-primary;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 // Homepage Header
 
+
+.image-header {
+  background-image: url('../img/header.jpg');
+}
+
+.mask {
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#mask {
+  background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,.8));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 
 header {
     position: relative;
@@ -200,7 +208,7 @@ header {
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 3px black;
+    // text-shadow: 1px 1px 3px black;
     .header-content {
         position: relative;
         text-align: center;
@@ -225,8 +233,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
-        background-color: rgba(0, 0, 0, .3);
+        min-height: 70%;
         .header-content {
             position: absolute;
             top: 50%;
@@ -344,6 +351,7 @@ header {
     @include button-variant($theme-dark, white, white);
 }
 
+
 .btn-primary {
     @include button-variant(white, $theme-primary, $theme-primary);
 }
@@ -352,13 +360,17 @@ header {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .btn-xl {
     padding: 15px 30px;
+}
+
+.btn-show {
+  background-color: $theme-primary;
 }
 
 // Contact
