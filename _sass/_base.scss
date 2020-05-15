@@ -95,8 +95,12 @@ aside {
 
 // Navigation
 
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+}
+
 .navbar-default {
-    background-color: white;
+    background-color: transparent;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -146,7 +150,10 @@ aside {
                 color: white;
             }
         }
-        .nav > li > a,
+        .nav > li > a, {
+          color: $theme-primary;
+        }
+
         .nav > li > a:focus {
             color: rgba(white, .7);
             &:hover {
@@ -183,12 +190,16 @@ aside {
 }
 
 .mask {
-  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5));
+  background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,.9));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
 }
 
 #mask {
@@ -205,11 +216,12 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header2.jpg');
     text-align: center;
-    color: white;
+    color: #fff;
     // text-shadow: 1px 1px 3px black;
     .header-content {
+      text-shadow: 1px 1px 1px black;
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
@@ -233,7 +245,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 70%;
+        min-height: 80%;
         .header-content {
             position: absolute;
             top: 50%;
@@ -370,7 +382,8 @@ header {
 }
 
 .btn-show {
-  background-color: $theme-primary;
+  border: 1px solid $theme-primary;
+  background-color: none;
 }
 
 // Contact
