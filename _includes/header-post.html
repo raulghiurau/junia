@@ -1,7 +1,9 @@
-<nav class="navbar navbar-default navbar-light navbar-expand-md ">
+<header class="post" style="background-image: url('{{ page.image }}');">
+<div class="mask-page">
+<nav class="navbar navbar-default navbar-light navbar-expand-md navbar-fixed-top">
 
 	<a class="navbar-brand" href="/">
-		<img src="/img/JMLogo.png" style="max-height: 30px;">
+		<img src="/img/JMLogoW.png" style="max-height: 30px;">
 	</a>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,3 +33,9 @@
 		</ul>
 	</div>
 </nav>
+
+<p style="font-size: 12px;"><i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </p>
+<h1 class="mt-1" style="font-size: 50px;">{{page.title}}</h1>
+
+</div>
+</header>

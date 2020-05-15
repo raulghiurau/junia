@@ -96,7 +96,7 @@ aside {
 // Navigation
 
 .navbar-light .navbar-nav .nav-link {
-  color: #333;
+  color: #fff;
 }
 
 .navbar-default {
@@ -190,12 +190,23 @@ aside {
 }
 
 .mask {
-  background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,.9));
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.8));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  @media (min-width: 768px) {
+      padding-bottom: 700px;
+  }
+}
+
+.mask-page {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.8));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  @media (min-width: 768px) {
+      padding-bottom: 100px;
+  }
 }
 
 .navbar-light .navbar-toggler {
@@ -208,6 +219,30 @@ aside {
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  @include background-cover;
+  background-position: bottom;
+  background-image: url('../img/header2.jpg');
+  text-align: center;
+  color: #fff;
+  // padding-bottom: 80px;
+}
+
+.post {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  @include background-cover;
+  background-position: top;
+  background-image: url('../img/header2.jpg');
+  text-align: center;
+  color: #fff;
+  // padding-bottom: 80px;
 }
 
 header {
