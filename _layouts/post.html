@@ -10,15 +10,17 @@
 			<div class="col-md-12 text-center">
 				<p style="font-size: 12px;"><i class="fas fa-calendar-week"></i> {{ page.date | date: "%a %b %d, %Y" }} </p>
 				<h1 class="mb-1"> {{ page.title }} </h1>
-				<!-- <h6 style="font-size: 12px;"> <i class="fas fa-user"></i> {{ page.author }} • <i class="fas fa-archive"></i> {{ page.category }} • <i class="far fa-clock"></i>  {{ page.duration }} min • <i class="fas fa-tag"></i> {{ page.tags }}</h6> 
+				<!-- <h6 style="font-size: 12px;"> <i class="fas fa-user"></i> {{ page.author }} • <i class="fas fa-archive"></i> {{ page.category }} • <i class="far fa-clock"></i>  {{ page.duration }} min • <i class="fas fa-tag"></i> {{ page.tags }}</h6>
 			</div>
 		</div>
 	</div>
 </div> -->
 
+<section>
+
 
 <div class="container">
-	<div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+	<div class="row">
 		<div class="col-md-8" style="max-width: 900px;">
 			{{ content }}
 		</div>
@@ -49,5 +51,7 @@
 		</div>
 	</div>
 </div>
+
+</section>
 
 {% include footer.html %}

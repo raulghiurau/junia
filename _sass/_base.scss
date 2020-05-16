@@ -204,6 +204,7 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  padding-bottom: 30px;
   @media (min-width: 768px) {
       padding-bottom: 100px;
   }
@@ -226,11 +227,15 @@ aside {
   width: 100%;
   min-height: auto;
   @include background-cover;
-  background-position: bottom;
-  background-image: url('../img/header2.jpg');
+  background-position: center;
+  background-image: url('../img/header.jpg');
   text-align: center;
   color: #fff;
   // padding-bottom: 80px;
+}
+
+.fa-bars {
+  color: #fff;
 }
 
 .post {
