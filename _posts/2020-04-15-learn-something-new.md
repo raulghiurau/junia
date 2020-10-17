@@ -7,7 +7,7 @@ author: Raul
 duration: "4"
 category: Updates
 tags: "Updates "
-image: ""
+image: /img/assets/roi.jpg
 ---
 ### Update 5.9.20
 
@@ -19,7 +19,7 @@ Got the favicon to change and reflect on safari icons.
 
 ### Update 4.16.20
 
-Update the editor to atom. Pretty neat to be able to push directly from the Html editor. I need to get better 
+Update the editor to atom. Pretty neat to be able to push directly from the Html editor. I need to get better
 
 ### Update 4.15.20
 
