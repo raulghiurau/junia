@@ -27,7 +27,6 @@ a {
     }
 }
 
-
 h3 {
   font-family: Georgia;
   font-style: italic;
@@ -53,7 +52,6 @@ p {
 
 .bg-dark {
     background-color: $theme-dark;
-
 }
 
 .text-faded {
@@ -85,13 +83,12 @@ section {
 .footer {
     background-color: #323232;
     color: #fff;
-    padding: 80px 0;
+    padding: 80px 40px;
 }
 
 .copyright {
   background-color: #191919;
   color: #fff;
-
 }
 
 aside {
@@ -265,14 +262,14 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header3.png');
     text-align: center;
     color: #fff;
     // text-shadow: 1px 1px 3px black;
     .header-content {
       text-shadow: 1px 1px 1px black;
         position: relative;
-        text-align: center;
+        text-align: left;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
@@ -467,4 +464,8 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: $theme-dark;
+}
+
+.history {
+    background-color: #f2f2f2;
 }
