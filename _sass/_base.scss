@@ -83,7 +83,7 @@ section {
 .footer {
     background-color: #323232;
     color: #fff;
-    padding: 80px 40px;
+    padding: 80px 30px;
 }
 
 .copyright {
@@ -190,7 +190,6 @@ aside {
 
 // Homepage Header
 
-
 .image-header {
   background-image: url('../img/header.jpg');
 }
@@ -269,7 +268,7 @@ header {
     .header-content {
       text-shadow: 1px 1px 1px black;
         position: relative;
-        text-align: left;
+        text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
