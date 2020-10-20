@@ -102,7 +102,7 @@ aside {
 // Navigation
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: $theme-primary;
 }
 
 .navbar-default {
@@ -233,7 +233,7 @@ aside {
   min-height: auto;
   @include background-cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+  background-image: url('../img/assets/pageimg.png');
   text-align: center;
   color: #fff;
   // padding-bottom: 80px;
