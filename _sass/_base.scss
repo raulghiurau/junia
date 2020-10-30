@@ -240,7 +240,7 @@ aside {
 }
 
 .fa-bars {
-  color: #fff;
+  color: #005b96;
 }
 
 .post {
@@ -263,10 +263,8 @@ header {
     background-position: center;
     background-image: url('../img/header3.png');
     text-align: center;
-    color: #fff;
-    // text-shadow: 1px 1px 3px black;
+    color: #005b96;
     .header-content {
-      text-shadow: 1px 1px 1px black;
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
@@ -274,7 +272,6 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -290,7 +287,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 80%;
+        min-height: 100%;
         .header-content {
             position: absolute;
             top: 50%;
