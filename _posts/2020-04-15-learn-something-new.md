@@ -6,7 +6,6 @@ excerpt: "What I’ve been working on"
 author: Raul
 duration: "4"
 category: Updates
-tags: "Updates "
 image: /img/assets/roi.jpg
 published: false
 ---
