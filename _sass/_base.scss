@@ -46,6 +46,14 @@ p {
     margin-bottom: 20px;
 }
 
+.hero-heading {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1em;
+    color: black;
+    max-width: 400px;
+}
+
 .bg-primary {
     background-color: $theme-primary;
 }
