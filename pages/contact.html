@@ -4,7 +4,28 @@ title: CONTACT
 description: Reach out to get started.
 ---
 
-<section class="pt-4">
+<form name="contact" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+<!-- <section class="pt-4">
 	<div class="container">
 		<h6 class="text-center"> Fill out the information below and we will be in touch! </h6>
 		<hr>
@@ -52,9 +73,11 @@ description: Reach out to get started.
 				</div>
 				<textarea class="form-control mb-2" name="text" placeholder="Message" rows="3"></textarea>
 				<small id="emailHelp" class="form-text text-muted mb-2">We'll never share your email with anyone else.</small>
+
 				<input class="btn btn-primary btn-xl" type="submit" value="Send">
+
 			</form>
 		</div>
 	</div>
 
-</section>
+</section> -->
