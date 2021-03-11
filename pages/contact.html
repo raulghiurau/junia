@@ -1,40 +1,26 @@
 ---
 layout: page
 title: CONTACT
-description: Reach out to get started.
+description: Contact us
 ---
 
-<section class="pt-4">
-	<div class="container">
-		<h5 class="text-center mt-4 mb-4"> Fill out the information below and we will be in touch! </h5>
-		<hr>
-		<div class="col-md-6 offset-md-3">
-			<form name="form" netlify>
-
-				<div class="form-group">
-					<label for="formGroupExampleInput">Name</label>
-					<input type="text" name="name" class="form-control" placeholder="Enter your name" aria-describedby="sizing-addon1">
-				</div>
-				<div class="form-group">
-					<label for="formGroupExampleInput">Email</label>
-					<input type="text" name="email" class="form-control" placeholder="Enter an email" aria-describedby="sizing-addon2">
-				</div>
-				<div class="form-group">
-					<label for="formGroupExampleInput">Phone</label>
-					<input type="text" name="phone" class="form-control" placeholder="Enter your phone" aria-describedby="sizing-addon2">
-				</div>
-
-				<div class="form-group">
-					<label for="formGroupExampleInput">Message</label>
-					<textarea class="form-control mb-2" name="text" placeholder="Enter your message here" rows="3"></textarea>
-				</div>
-
-				<small id="emailHelp" class="form-text text-muted mb-2">We'll never share your email with anyone else.</small>
-
-				<div class="text-center">
-				<input class="btn btn-primary btn-xl mt-3" type="submit" value="Send">
-				</div>
-			</form>
-		</div>
-	</div>
-</section>
+<form name="contact" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
