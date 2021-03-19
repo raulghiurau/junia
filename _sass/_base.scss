@@ -27,6 +27,10 @@ a {
     }
 }
 
+h1.hero {
+    font-size: 4rem;
+}
+
 h1,
 h2,
 h3,
@@ -39,6 +43,7 @@ h6 {
 h4, {
     font-size: 14px;
     text-transform: uppercase ;
+    line-height: 22px;
 }
 
 p {
@@ -278,11 +283,11 @@ header {
     @include background-cover;
     background-position: center;
     background-image: url('../img/header4.jpg');
-    text-align: center;
+    text-align: left;
     color: #fff;
     .header-content {
         position: relative;
-        text-align: center;
+        text-align: left;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
@@ -290,7 +295,7 @@ header {
                 font-weight: 700;
                 margin-top: 0;
                 margin-bottom: 0;
-                text-align: center;
+                text-align: left;
             }
             hr {
                 margin: 30px auto;

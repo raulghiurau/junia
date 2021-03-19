@@ -1,48 +1,63 @@
 /*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+    * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+    */
+    (function($) {
+  "use strict"; // Start of use strict
 
-(function($) {
-    "use strict"; // Start of use strict
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 72)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 75
+  });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-scrolled");
+    } else {
+      $("#mainNav").removeClass("navbar-scrolled");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
-
-    // // Offset for Main Navigation
-    // $('#mainNav').affix({
-    //     offset: {
-    //         top: 100
-    //     }
-    // })
-
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
+  // Magnific popup calls
+  $('#portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1]
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    }
+  });
 
 })(jQuery); // End of use strict
