@@ -8,5 +8,6 @@ author: Raul
 duration: "3"
 category: Marketing
 tags: Marketing
+image: /img/assets/aboutimg.png
 ---
 One of the sure signs of a great marketing professional is how well are their results in 30 60 and 90 days.
