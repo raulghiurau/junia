@@ -2,12 +2,13 @@
 layout: post
 title: "Learn something new "
 date: 2020-04-15T00:07:48.714Z
-excerpt: "What I’ve been working on"
+excerpt: What I’ve been working on
 author: Raul
+published: false
 duration: "4"
 category: Updates
-image: /img/assets/roi.jpg
-published: false
+tags: Marketing
+image: /img/assets/intro.jpg
 ---
 ### Update 5.9.20
 
