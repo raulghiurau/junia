@@ -33,6 +33,7 @@ h1.hero {
 
 h1.page-title {
     font-weight: 800;
+    color: $theme-primary;
 }
 
 h1,
@@ -41,6 +42,7 @@ h3,
 
 h5 {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      color: $theme-primary;
 }
 
 h6 {
@@ -239,14 +241,15 @@ aside {
 }
 
 .mask-page {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.2));
+    background-color: #f2f2f2;
+  // background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.2));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   @media (min-width: 768px) {
-      padding-bottom: 100px;
+      padding-bottom: 50px;
   }
 }
 
@@ -268,9 +271,9 @@ aside {
   min-height: auto;
   @include background-cover;
   background-position: center;
-  background-image: url('../img/assets/design.jpg');
+  // background-image: url('../img/assets/design.jpg');
   text-align: center;
-  // color: #fff;
+  color: #fff;
   // padding-bottom: 80px;
 }
 
@@ -284,9 +287,9 @@ aside {
   min-height: auto;
   @include background-cover;
   background-position: top;
-  background-image: url('../img/header2.jpg');
+  // background-image: url('../img/header2.jpg');
   text-align: center;
-  // color: #fff;
+  color: #fff;
   // padding-bottom: 80px;
 }
 
@@ -462,6 +465,10 @@ body {
     position:absolute;
 }
 
+.video-portfolio {
+    background-color: #dcdcdc;
+}
+
 // portfolio-box
 .portfolio-item {
     box-shadow: 0px 0px 5px;
@@ -487,7 +494,7 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(0, 91, 150, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -502,51 +509,4 @@ body {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
-}
-
-.port-image
-{
-    width: 100%;
-}
-
-.col-md-3
-{
-    margin-bottom:20px;
-}
-
-.each-item
-{
-    position:relative;
-    overflow:hidden;
-}
-
-.each-item:hover .cap2, .each-item:hover .cap1
-{
-    left:0px;
-}
-
-.cap1
-{
-    position:absolute;
-    width:100%;
-    height:70%;
-    background:rgba(255, 255, 255, 0.5);
-    top:0px;
-    left:-100%;
-    padding:10px;
-
-    transition: all .5s;
-}
-
-.cap2
-{
-    position:absolute;
-    width:100%;
-    height:30%;
-    background:rgba(0, 178, 255, 0.5);
-    bottom:0px;
-    left:100%;
-    padding:10px;
-
-    transition: all .5s;
 }
