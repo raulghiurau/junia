@@ -4,9 +4,9 @@ title: VIDEO
 description: Get videos done.
 ---
 
-{% include backbutton.html %}
+<div class="video-portfolio">
 
-<section class="video-portfolio">
+    {% include backbutton.html %}
 
 <div id="carouselExampleControls" class="carousel slide">
     <ol class="carousel-indicators">
@@ -15,8 +15,9 @@ description: Get videos done.
    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
  </ol>
+
   <div class="carousel-inner text-center">
-      <div class="carousel-item active">
+      <div class="carousel-item active video-responsive">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jZZjKghA4VU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     <div class="carousel-item ">
@@ -38,7 +39,7 @@ description: Get videos done.
     <span class="sr-only">Next</span>
   </a>
 </div>
-</section>
+</div>
 
 
 {% include aside.html %}

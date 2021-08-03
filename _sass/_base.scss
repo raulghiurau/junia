@@ -62,7 +62,7 @@ h4, {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -224,6 +224,12 @@ aside {
     }
 }
 
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
 // Homepage Header
 
 .image-header {
@@ -249,7 +255,7 @@ aside {
   padding-top: 30px;
   padding-bottom: 30px;
   @media (min-width: 768px) {
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
   }
 }
 
@@ -466,7 +472,9 @@ body {
 }
 
 .video-portfolio {
-    background-color: #dcdcdc;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 // portfolio-box
@@ -475,6 +483,7 @@ body {
     border-radius: 20px;
     padding: 10px;
 }
+
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
 }
@@ -492,9 +501,9 @@ body {
   position: absolute;
   bottom: 0;
   text-align: center;
-  opacity: 0;
+  opacity: 0.9;
   color: #fff;
-  background: rgba(0, 91, 150, 0.9);
+  background: rgba(51, 51, 51, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -502,7 +511,7 @@ body {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
