@@ -3,24 +3,38 @@ layout: page
 title: CONTACT
 description: Contact us
 ---
-
+<div class="container mt-3 mb-3">
+    <div class="row">
+        <div class="col-md-6">
 <form name="contact netlify">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>
+    <label>Your Name:
+
+    <input class="form-control" type="text" placeholder="Name" name="name"/></label>
+
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+    <label>Your Email:
+<input class="form-control" type="mail" placeholder="Email"
+         name="email" /></label>
   </p>
   <p>
-    <label>Your Role: <select name="role[]" multiple>
+    <label>Your Role: <select class="form-control" name="role[]" multiple>
       <option value="leader">Leader</option>
       <option value="follower">Follower</option>
     </select></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>Message: <textarea name="message" class="form-control"></textarea></label>
   </p>
   <p>
-    <button type="submit">Send</button>
+    <button type="submit" class="btn btn-primary mb-2">Send</button>
   </p>
 </form>
+</div>
+<div class="col-md-4">
+    <p>Email</p>
+    <h5>sales@juniamarketing.com</h5>
+    </div>
+</div>
+</div>
