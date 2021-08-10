@@ -8,6 +8,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+
+
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -31,7 +33,7 @@ h1.hero {
     font-size: 3rem;
 }
 
-h1.page-title {
+h2.page-title {
     font-weight: 800;
     color: $theme-primary;
 }
@@ -45,9 +47,10 @@ h5 {
       color: $theme-primary;
 }
 
-h6 {
+h6.page-title {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-size: 13px;
+      color: #333333;
 }
 
 .tag-line {
@@ -275,12 +278,13 @@ aside {
   position: relative;
   width: 100%;
   min-height: auto;
-  @include background-cover;
+  // @include background-cover;
   background-position: center;
-  // background-image: url('../img/assets/design.jpg');
+  background-color: #f2f2f2;
   text-align: center;
   color: #fff;
-  // padding-bottom: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .fa-bars {
@@ -414,9 +418,14 @@ header {
     padding: 15px 30px;
 }
 
+.btn-xs {
+    padding: 2px 5px;
+}
+
 .btn-show {
   color: #fff;
   background-color: #005b96;
+  border-radius: 2px;
 }
 
 // Contact
@@ -477,10 +486,34 @@ body {
     margin-bottom: 10px;
 }
 
+.grid {
+height: 0 auto;
+}
+
+
+.grid-item {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    // // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    // // width: 100%;
+    // // height: 100%;
+    // position: absolute;
+    // bottom: 0;
+    // text-align: center;
+    // opacity: 0.9;
+    // color: #fff;
+    // background: rgba(51, 51, 51, 0.9);
+    // transition: opacity 0.25s ease;
+}
+
 // portfolio-box
 .portfolio-item {
-    box-shadow: 0px 0px 5px;
-    border-radius: 20px;
+    // box-shadow: 0px 0px 200px 2px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -509,12 +542,12 @@ body {
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
+  font-size: 0.5rem;
   font-weight: 600;
-  // text-transform: uppercase;
+  text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
