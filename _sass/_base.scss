@@ -163,6 +163,7 @@ aside {
         > li {
         text-align: center;
         margin-left: 20px;
+
             > a,
             > a:focus {
                 text-transform: uppercase;
@@ -486,28 +487,19 @@ body {
     margin-bottom: 10px;
 }
 
-.grid {
-height: 0 auto;
+.btn-sm {
+    margin-bottom: 5px;
 }
+
+// .grid {
+// height: 0 auto;
+// }
 
 
 .grid-item {
     width: 50%;
     margin: 0;
     padding: 0;
-    // // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
-    // // width: 100%;
-    // // height: 100%;
-    // position: absolute;
-    // bottom: 0;
-    // text-align: center;
-    // opacity: 0.9;
-    // color: #fff;
-    // background: rgba(51, 51, 51, 0.9);
-    // transition: opacity 0.25s ease;
 }
 
 // portfolio-box
@@ -534,7 +526,7 @@ height: 0 auto;
   position: absolute;
   bottom: 0;
   text-align: center;
-  opacity: 0.9;
+  opacity: .9;
   color: #fff;
   background: rgba(51, 51, 51, 0.9);
   transition: opacity 0.25s ease;
@@ -542,12 +534,12 @@ height: 0 auto;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.5rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1rem;
+  font-size: .6rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
