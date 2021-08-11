@@ -19,4 +19,4 @@ A marketing consultant should be able to get you from point A to point B of wher
 
 ### Reason #2
 
-You want your business to grow.
+You want your business to grow. Now
