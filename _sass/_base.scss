@@ -32,8 +32,6 @@ body {
     line-height: 1.7em;
 }
 
-
-
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -55,7 +53,10 @@ a {
 }
 
 h1.hero {
-    font-size: 3.7rem;
+    font-size: 2.3rem;
+    @media (min-width: 768px) {
+        font-size: 3.7rem;
+    }
 }
 
 h2.page-title {
@@ -87,14 +88,19 @@ h4 {
     font-size: 14px;
     text-transform: uppercase ;
     line-height: 22px;
-
 }
 
-.tag-line {
-    max-width: 400px;
-    line-height: 20px;
-    color: #101526;
+h4.tag-line {
+    text-align: center;
+    font-size: 12px;
+    color: #B9B9B9;
 }
+
+// .tag-line {
+//     max-width: 400px;
+//     line-height: 20px;
+//     color: #101526;
+// }
 
 
 p {
@@ -282,6 +288,7 @@ aside {
   @media (min-width: 768px) {
       padding-bottom: 768px;
   }
+  // padding-bottom: 120px;
 }
 
 .mask-page {
@@ -358,9 +365,10 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
                 text-align: left;
-                font-size: 2.3rem;
+                // font-size: 2.3rem;
                 color: #fff;
             }
+
             hr {
                 margin: 30px auto;
             }
@@ -582,12 +590,17 @@ background: linear-gradient(45deg, rgba(34,34,34,1) 0%, rgba(87,87,87,.4) 100%);
     font-family: sofia-pro,sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   // margin: 10px;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
   font-size: .7rem;
+  @media (min-width: 768px) {
+      font-size: 1rem;
+  }
   line-height: normal;
+
+
 }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
