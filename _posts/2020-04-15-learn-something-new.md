@@ -4,13 +4,13 @@ title: "Learn something new "
 date: 2020-04-15T00:07:48.714Z
 excerpt: What I’ve been working on
 author: Raul
-published: false
+published: true
 duration: "4"
 category: Updates
 tags: Consulting
 image: /img/assets/brand.jpg
 ---
-### update 8.17.21
+### Update 8.17.21
 
 * Was able to get a svg logo
 * Able to have a portfolio
