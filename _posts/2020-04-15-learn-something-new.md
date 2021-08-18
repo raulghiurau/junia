@@ -2,13 +2,20 @@
 layout: post
 title: "Learn something new "
 date: 2020-04-15T00:07:48.714Z
-excerpt: "What I’ve been working on"
+excerpt: What I’ve been working on
 author: Raul
+published: false
 duration: "4"
 category: Updates
-image: /img/assets/roi.jpg
-published: false
+tags: Consulting
+image: /img/assets/brand.jpg
 ---
+### update 8.17.21
+
+* Was able to get a svg logo
+* Able to have a portfolio
+* Choose a design style
+
 ### Update 5.9.20
 
 Implemented a email subscription
