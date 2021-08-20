@@ -10,6 +10,11 @@ category: Updates
 tags: Consulting
 image: /img/assets/brand.jpg
 ---
+### update 8.19.21
+
+* added sections 
+* added coming soon for projects
+
 ### Update 8.17.21
 
 * Was able to get a svg logo
