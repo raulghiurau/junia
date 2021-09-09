@@ -44,11 +44,11 @@ hr.light {
 
 a {
     @include transition-all;
-    color: #18274B;
+    color: #fff;
     &:hover,
     &:focus {
         // color: darken($theme-primary, 10%);
-        color: $theme-primary;
+        color: #fff;
     }
 }
 
@@ -71,6 +71,7 @@ h5 {
     font-family: sofia-pro,sans-serif;
     font-style: normal;
     color: $theme-primary;
+    margin-bottom: 20px;
 }
 
 h6.page-title {
@@ -126,26 +127,30 @@ section {
     padding: 6rem 0;
 }
 
-.what-we-do {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.what-i-do {
+    padding-top: 110px;
+    padding-bottom: 110px;
     p {
         max-width: 700px;
     }
 }
 
-.what-we-offer {
+.what-i-offer {
     background-color: #f2f2f2;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
 }
 
-.servicesbanner {
+.servicesbanners {
     background-color: #18274b;
     color: #fff;
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
+    h4{
+        font-size: 18px;
+    }
 }
 
 .section-post {
@@ -167,7 +172,7 @@ section {
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: $theme-primary;
     color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -175,7 +180,8 @@ section {
 
 
 .copyright {
-  background-color: #f2f2f2;
+  background-color: $theme-primary;
+  color: #fff;
 }
 
 aside {
@@ -245,7 +251,7 @@ aside {
             }
         }
         .nav > li > a, {
-          color: #fff;
+          color: $theme-primary;
         }
 
         .nav > li > a:focus {
@@ -339,6 +345,10 @@ aside {
 
 .fa-bars {
   color: #18274B;
+}
+
+.fa-times {
+    color: red;
 }
 
 .post {
@@ -465,7 +475,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     background-color: #D4BB66;
-    color: #fff;
+    color: $theme-primary;
     &:hover {
         color: #fff;
         background-color: $theme-primary;
