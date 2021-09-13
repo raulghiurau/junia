@@ -61,7 +61,8 @@ h1.hero {
 
 h2.page-title {
     font-weight: 800;
-    color: $theme-primary;
+    color: #fff;
+    padding-top: 30px;
 }
 
 h1,
@@ -78,11 +79,12 @@ h6.page-title {
     font-family: sofia-pro, sans-serif;
     font-style: normal;
     font-size: 13px;
-    color: #333333;
+    color: $theme-secondary;
 }
 
 h3 {
     font-family: abril-display, serif;
+    font-size: 22px;
 }
 
 h4 {
@@ -139,7 +141,7 @@ section {
     background-color: #f2f2f2;
     // color: #fff;
     padding-top: 110px;
-    padding-bottom: 110px;
+    // padding-bottom: 110px;
 }
 
 .servicesbanners {
@@ -195,7 +197,10 @@ aside {
 // Navigation
 
 .navbar-light .navbar-nav .nav-link {
-  color: $theme-primary;
+  color: #f2f2f2;
+  &:hover {
+      color: #D4BB66;
+  }
 }
 
 .navbar-default {
@@ -294,39 +299,15 @@ aside {
   background-image: url('../img/header.jpg');
 }
 
-.mask {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.4));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  @media (min-width: 768px) {
-      padding-bottom: 768px;
-  }
-  // padding-bottom: 120px;
-}
-
-.mask-page {
-    background-color: #f2f2f2;
-  // background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.2));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  @media (min-width: 768px) {
-      // padding-bottom: 50px;
-  }
-}
-
 .navbar-light .navbar-toggler {
   border-color: transparent;
 }
 
-#mask {
+.mask-post {
   background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,.8));
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 70px;
 }
 
@@ -334,17 +315,30 @@ aside {
   position: relative;
   width: 100%;
   min-height: auto;
+    background-image: url('../img/header1.jpg');
   // @include background-cover;
   background-position: center;
   background-color: #f2f2f2;
   text-align: center;
   color: #fff;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
+  // padding-top: 20px;
+}
+
+.mask-page {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.2));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   padding-top: 20px;
+  padding-bottom: 120px;
+  @media (min-width: 768px) {
+      // padding-bottom: 50px;
+  }
 }
 
 .fa-bars {
-  color: #18274B;
+  color: #fff;
 }
 
 .fa-times {
@@ -355,9 +349,9 @@ aside {
   position: relative;
   width: 100%;
   min-height: auto;
-  @include background-cover;
-  background-position: top;
-  // background-image: url('../img/header2.jpg');
+  // @include background-cover;
+  background-position: center;
+  background-image: url('../img/header1.jpg');
   text-align: center;
   color: #f2f2f2;
   // padding-bottom: 80px;
@@ -420,6 +414,18 @@ header {
             }
         }
     }
+}
+
+.header-mask {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.4));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 20px;
+  @media (min-width: 768px) {
+      padding-bottom: 680px;
+  }
+  // padding-bottom: 120px;
 }
 
 // Sections

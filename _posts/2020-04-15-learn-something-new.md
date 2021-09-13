@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learn something new "
+title: "Learning something new "
 date: 2020-04-15T00:07:48.714Z
 excerpt: What I’ve been working on
 author: Raul
@@ -12,7 +12,7 @@ image: /img/assets/brand.jpg
 ---
 ### update 8.19.21
 
-* added sections 
+* added sections
 * added coming soon for projects
 
 ### Update 8.17.21
