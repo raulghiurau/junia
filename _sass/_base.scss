@@ -145,9 +145,12 @@ section {
 }
 
 .what-i-solve {
-    background-image: url('../img/header.jpg');
-padding-top: 200px;
-padding-bottom: 200px;
+    background-image: url('../img/header1.jpg');
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
 }
 
 .servicesbanners {
