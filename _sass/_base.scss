@@ -135,8 +135,8 @@ section {
 }
 
 .what-i-do {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     p {
         max-width: 700px;
     }
@@ -152,21 +152,24 @@ section {
 
 .what-i-solve {
     background-image: url('../img/header1.jpg');
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%);
 }
 
-.servicesbanners {
+.service-banner {
     background-color: #18274b;
+    border: solid 1px white;
     color: #fff;
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
     h4{
         font-size: 18px;
+    }
+    p {
+        color: #fff;
     }
 }
 
@@ -221,13 +224,13 @@ aside {
 .navbar-default {
     background-color: transparent;
     border-color: rgba($theme-dark, .5);
-    @include sans-serif-font;
+    // @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
-        @include sans-serif-font;
+        // @include sans-serif-font;
         font-weight: 200;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -240,7 +243,7 @@ aside {
 
             > a,
             > a:focus {
-                text-transform: uppercase;
+                // text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 text-align: center;
@@ -345,7 +348,6 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  padding-top: 20px;
   padding-bottom: 120px;
   @media (min-width: 768px) {
       // padding-bottom: 50px;
@@ -489,6 +491,21 @@ header {
     @include button-variant(white, $theme-primary, $theme-primary);
 }
 
+.btn-secondary {
+    font-family: sofia-pro;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #18274B;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: $theme-secondary;
+    }
+}
+
 .btn {
     font-family: sofia-pro;
     border: none;
@@ -516,6 +533,8 @@ header {
   background-color: #D4BB66;
   border-radius: 3px;
 }
+
+
 
 // Contact
 #contact .fa {
