@@ -134,6 +134,11 @@ section {
     padding: 6rem 0;
 }
 
+.about {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
 .what-i-do {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -504,6 +509,7 @@ header {
         text-decoration: none;
         background-color: $theme-secondary;
     }
+    box-shadow: 2px 2px #343a40;
 }
 
 .btn {
@@ -518,6 +524,7 @@ header {
         color: #fff;
         background-color: $theme-primary;
     }
+    box-shadow: 2px 2px #343a40;
 }
 
 .btn-xl {
