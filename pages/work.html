@@ -172,6 +172,9 @@ description: Projects that i've worked on
 <script src="/js/isotope.pkgd.min.js"></script>
 
 <script>
+
+
+
     var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows'
@@ -181,6 +184,7 @@ description: Projects that i've worked on
         $grid.isotope({
             filter: value
         });
+        $grid.isotope('layout');
     })
 </script>
 
