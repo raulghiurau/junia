@@ -540,8 +540,6 @@ header {
   border-radius: 3px;
 }
 
-
-
 // Contact
 #contact .fa {
     color: $theme-dark;
@@ -604,16 +602,16 @@ body {
     margin-bottom: 5px;
 }
 
-// .grid {
-// height: 0 auto;
-// }
+.grid {
+height: 690px;
+}
 
 label {
     display: block;
 }
 
 .grid-item {
-    width: 50%;
+    // width: 100%;
     margin: 0;
     padding: 0;
 }
