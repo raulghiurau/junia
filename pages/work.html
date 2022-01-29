@@ -174,7 +174,8 @@ description: Projects that i've worked on
 <script>
     var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.smooth'
     });
     $('.filter button').on("click", function () {
         var value = $(this).attr('data-name');
