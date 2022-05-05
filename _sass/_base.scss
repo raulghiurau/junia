@@ -151,7 +151,7 @@ section {
     background-color: #f2f2f2;
     // color: #fff;
     padding-top: 110px;
-    // padding-bottom: 110px;
+    padding-bottom: 110px;
 }
 
 .what-i-solve {
@@ -513,7 +513,7 @@ header {
     background-color: #18274B;
     color: #fff;
     &:hover {
-        color: #fff;
+        color: #18274B;
         text-decoration: none;
         background-color: $theme-secondary;
     }
