@@ -18,10 +18,14 @@ We've all been there. We have a product or service to offer the world and want t
 
 ### Be the subject matter expert
 
-Create consistent content
+Everyone wants to talk to a knowledgeable person. We want to know accurate information because we don't want to waste our time. 
 
-Pick relevant keywords  
+### Create consistent content
 
-Offer what you are wanting to get found for
+Create some and create it often.
 
-Go deep with what you are offering
+### Pick relevant keywords  
+
+### Offer what you are wanting to get found for
+
+### Go deep with what you are offering
