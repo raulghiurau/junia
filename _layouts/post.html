@@ -2,35 +2,10 @@
 {% include header-post.html %}
 {% include scripts.html %}
 
-<div class="container mt-4">
+<div class="container mt-5 mb-5">
 	<div class="row">
-		<div class="col-md-8" style="max-width: 900px;">
+		<div class="col-sm-8 offset-md-3 mt-5 mb-5" style="max-width: 600px;">
 			{{ content }}
-		</div>
-
-		<div class="col-md-4 mb-4">
-			<hr class="d-md-none mb-4 mt-4">
-			<h3> Related Posts </h3>
-			<ul class="list-unstyled">
-				{% for post in site.posts %}
-				<div class="media">
-					<div class="media-left" style="margin-bottom: 20px;">
-						<a href="{{ post.url }}">
-							<img class="align-self-center mr-3" src="{{ post.image | prepend: site.baseurl }}" style="max-width: 100px;">
-						</a>
-					</div>
-					<div class="media-body">
-						<li>
-							<h6 style="margin-top: 0; font-size: 13px; ">
-								<a style="color: #18274B;" href="{{ post.url }}">{{ post.title }}</a>
-							</h6>
-							<p><span style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} </span><br>
-							</p>
-						</li>
-					</div>
-				</div>
-				{% endfor %}
-			</ul>
 		</div>
 	</div>
 </div>

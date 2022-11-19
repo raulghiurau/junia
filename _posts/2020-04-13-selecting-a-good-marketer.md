@@ -9,7 +9,7 @@ category: marketing
 image: /img/assets/ecom.jpg
 excerpt: The 5 things you need to look for when looking to consult with a marketing group.
 duration: 4
-published: false
+published: true
 ---
 
 ### 1. Makes sure they have experience in the marketing field.

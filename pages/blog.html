@@ -1,67 +1,28 @@
 ---
 layout: page
 title: BLOG
-description: What i've been up to
+description: Resources and tips to marketing
 ---
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 mr-auto ml-auto">
-				<ul class="list-unstyled mt-5">
-					{% for post in site.posts %}
-					<div class="media">
-						<div class="media-left" style="margin-bottom: 20px;">
-							<a href="{{ post.url }}">
-								<img class="align-self-center mr-3" src="{{ post.image | prepend: site.baseurl }}" style="max-width: 130px;">
-							</a>
-						</div>
-						<div class="media-body">
-							<li>
-								<h3 class="mb-0">
-									<a href="{{ post.url }}" style="color: #18274B">{{ post.title }}</a>
-								</h3>
-								<p class="mt-0"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }} <br>
-								</p>
-							</li>
-						</div>
-					</div>
-					{% endfor %}
-				</ul>
+<div class="container mt-4 mb-4">
+	<div class="row">
+		{% for post in site.posts %}
+		<div class="col-sm-4">
+			<div class="mb-4 text-center">
+				<a href="{{post.url}}"><img src="{{ post.image | prepend: site.baseurl }}" href="{{post.url}}" class="card-img-top" alt="check">
+				<div class="card-body">
+					<h5 class="card-title">{{ post.title }}</h5>
+					<!-- <h5 class="card-text">{{post.excerpt | truncate: 80 }}</h5> -->
+					<p class="mt-0" style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }}
+					</p>
+					<a href="{{ post.url }}" style="text-align: right; color: #242424;">Read More <i class="fa-regular fa-arrow-right"></i> </a>
+				</div>
+					</a>
+				</div>
 			</div>
-			<!-- <div class="col-md-4">
-				<h5> Tags </h5>
-				<ul class="list-unstyled">
-					{% for post in site.posts %}
-					<li class="badge badge-secondary">
-						<a href="{{ post.url }}" style="color: #fff;">
-							{{ post.tags | join: ', ' }}
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-				<h5>Categories </h5>
-				<ul class="list-unstyled">
-					{% for post in site.posts  %}
-					<li class="badge badge-secondary">
-						<a href="{{ post.url }}" style="color: #fff;">
-							{{ post.categories | join: ', ' }}
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-
-				<h5>Publishing Author </h5>
-				<ul class="list-unstyled">
-					{% for post in site.posts  %}
-					<li class="badge badge-secondary">
-						<a href="{{ post.url }}" style="color: #fff;">
-							{{ post.author | join: ', ' }}
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div> -->
+			{% endfor %}
 		</div>
+
 	</div>
 
 {% include call-to-action.html %}
