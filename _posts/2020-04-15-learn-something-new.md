@@ -4,7 +4,7 @@ title: "Learning something new "
 date: 2020-04-15T00:07:48.714Z
 excerpt: What I’ve been working on
 author: Raul
-published: true
+published: false
 duration: "4"
 category: Updates
 tags: Consulting
