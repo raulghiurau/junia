@@ -2,11 +2,6 @@
 layout: client
 title: Everlast Floors
 date: 
-
-
-
-
-
 image: /img/assets/photo.jpg
 published: true
 ---
