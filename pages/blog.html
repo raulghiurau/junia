@@ -9,20 +9,22 @@ description: Resources and tips to marketing
 		{% for post in site.posts %}
 		<div class="col-sm-4">
 			<div class="mb-4 text-center">
-				<a href="{{post.url}}"><img src="{{ post.image | prepend: site.baseurl }}" href="{{post.url}}" class="card-img-top" alt="check">
-				<div class="card-body">
-					<h5 class="card-title">{{ post.title }}</h5>
-					<!-- <h5 class="card-text">{{post.excerpt | truncate: 80 }}</h5> -->
-					<p class="mt-0" style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date | date:" %b %d, %Y" }}
-					</p>
-					<a href="{{ post.url }}" style="text-align: right; color: #242424;">Read More <i class="fa-regular fa-arrow-right"></i> </a>
-				</div>
-					</a>
-				</div>
+				<a href="{{post.url}}"><img src="{{ post.image | prepend: site.baseurl }}" href="{{post.url}}"
+						class="card-img-top" alt="check">
+					<div class="card-body">
+						<h5 class="card-title">{{ post.title }}</h5>
+						<!-- <h5 class="card-text">{{post.excerpt | truncate: 80 }}</h5> -->
+						<p class="mt-0" style="font-size: 12px;"><i class="fas fa-calendar-week"></i>{{ post.date |
+							date:" %b %d, %Y" }}
+						</p>
+						<a href="{{ post.url }}" style="text-align: right; color: #242424;">Read More <i
+								class="fa-regular fa-arrow-right"></i> </a>
+					</div>
+				</a>
 			</div>
-			{% endfor %}
 		</div>
-
+		{% endfor %}
 	</div>
+</div>
 
 {% include call-to-action.html %}
