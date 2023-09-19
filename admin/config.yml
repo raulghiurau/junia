@@ -29,7 +29,6 @@ collections:
       - { lable: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-client:
   - name: 'client'
     label: 'Clients'
     folder: '_clients/'
