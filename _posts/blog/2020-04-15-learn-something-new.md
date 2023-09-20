@@ -6,7 +6,7 @@ excerpt: What I’ve been working on
 author: Raul
 published: false
 duration: "4"
-category: Updates
+category: blog
 tags: Consulting
 image: /img/assets/brand.jpg
 ---

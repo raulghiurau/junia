@@ -41,7 +41,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Project Date', name: 'date', widget: 'datetime' }
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
-      - { lable: 'Author', name: 'author', widget: 'string' }
-      - { lable: 'Category', name: 'category', widget: 'string' }
+      - { lable: 'Services', name: 'services', widget: 'string' }
+      - { lable: 'Category (blog or client)', name: 'category', widget: 'string' }
       - { lable: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }

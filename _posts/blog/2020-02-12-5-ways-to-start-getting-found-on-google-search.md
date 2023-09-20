@@ -5,7 +5,7 @@ date: 2020-03-02 19:41 -0400
 excerpt: Easy ways to start getting found on Google search for what you sell and offer.
 author: Raul
 duration: 2
-category: marketing
+category: blog
 tags: consulting
 image: /img/assets/photo.jpg
 published: true
