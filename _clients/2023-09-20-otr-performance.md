@@ -9,4 +9,4 @@ website: https://www.otrperformance.com
 image: /img/assets/otrlogo.png
 background-image: /img/assets/otrbg.jpg
 ---
-![]()
+![](/img/assets/gifmaker_me.gif)
