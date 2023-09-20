@@ -10,7 +10,3 @@ image: /img/assets/everlast2.png
 background-image: /img/assets/everlastbg.jpg
 publish: true
 ---
-
-## This is a heading. 
-
-Why is this not working? 
