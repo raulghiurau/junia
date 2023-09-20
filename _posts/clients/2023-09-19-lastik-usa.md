@@ -11,6 +11,7 @@ image: /img/assets/Lastik.png
 background-image: /img/assets/lastikbg.jpg
 publish: true
 ---
+
 ![](/img/assets/lastikbg.jpg)
 
 ![](/img/assets/video.jpg)
