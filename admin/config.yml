@@ -43,6 +43,7 @@ collections:
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
       - { lable: 'Services', name: 'services', widget: 'string' }
       - { lable: 'Category', name: 'category', widget: 'string' }
+      - { lable: 'Website', name: 'website', widget: 'string' }
       - { lable: 'Image', name: 'image', widget: 'image', required: false }
       - { lable: 'Image', name: 'background-image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }

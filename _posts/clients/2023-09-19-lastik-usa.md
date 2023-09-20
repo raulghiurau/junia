@@ -6,6 +6,7 @@ excerpt: This is new
 author: Raul
 project-date: 2020
 services: design, website, print
+website: https://lastikusa.com
 category: client
 image: /img/assets/Lastik.png
 background-image: /img/assets/lastikbg.jpg
