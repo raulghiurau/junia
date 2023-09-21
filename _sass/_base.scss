@@ -52,6 +52,10 @@ a {
     }
 }
 
+img {
+    max-width: 100%;
+}
+
 h1.hero {
     font-size: 2.3rem;
     @media (min-width: 768px) {
