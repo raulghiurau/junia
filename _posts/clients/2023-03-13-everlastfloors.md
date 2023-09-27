@@ -11,4 +11,4 @@ website: https://everlastfloors.com
 image: /img/assets/everlast2.png
 background-image: /img/assets/everlastbg.jpg
 ---
-![](/img/assets/everlast.png)
+![](/img/assets/everlast2.png)
