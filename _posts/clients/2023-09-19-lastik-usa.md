@@ -1,18 +1,17 @@
 ---
 layout: client
 title: Lastik USA
+project-date: 2020
 date: 2023-09-17T02:51:27.781Z
 excerpt: This is new
 author: Raul
-project-date: 2020
+publish: true
 services: design, website, print
-website: https://lastikusa.com
 category: client
+website: https://lastikusa.com
 image: /img/assets/Lastik.png
 background-image: /img/assets/lastikbg.jpg
-publish: true
 ---
 
-![](/img/assets/lastikbg.jpg)
 
-![](/img/assets/video.jpg)
+![](/img/assets/lastik2.png)
