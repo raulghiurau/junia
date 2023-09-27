@@ -12,4 +12,4 @@ background-image: /img/assets/volobg.jpeg
 ---
 #### Website design
 
-![](/img/assets/volofloors.png)
+![](/img/assets/volofloors2.png)
