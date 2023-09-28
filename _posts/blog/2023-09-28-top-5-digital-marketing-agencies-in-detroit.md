@@ -5,7 +5,7 @@ date: 2023-09-28T02:39:16.604Z
 excerpt: When you need them make sure marketing agencies understand your customer
 author: Raul
 duration: "1"
-category: marketing
+category: blog
 tags: top 5, marketing agencies, Detroit, Michigan
 image: /img/assets/pexels-shan-nir-15020901.jpg
 ---
