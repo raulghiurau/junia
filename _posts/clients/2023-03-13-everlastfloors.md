@@ -8,7 +8,7 @@ title: Everlast Floors
 services: design, website, print
 category: client
 website: https://everlastfloors.com
-image: /img/assets/everlast2.png
+image: /img/assets/everlast.png
 background-image: /img/assets/everlastbg.jpg
 ---
 ![](/img/assets/everlast2.png)
