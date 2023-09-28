@@ -167,11 +167,12 @@ section {
 .service-banner {
     background-color: #18274B;
     border: solid 1px white;
+    border-radius: 5px;
     color: #fff;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    h4{
+    h4 {
         font-size: 18px;
     }
     p {
