@@ -8,4 +8,4 @@ services: logo, website, social integration
 category: client
 website: https://www.ligiasfreshbowls.com
 ---
-Image coming soon
+Image coming soon.
