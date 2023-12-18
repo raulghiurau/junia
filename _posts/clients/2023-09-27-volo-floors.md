@@ -10,6 +10,6 @@ website: www.volofloors.com
 image: /img/assets/Volo.png
 background-image: /img/assets/volobg.jpeg
 ---
-#### Website design
+
 
 ![](/img/assets/volofloors2.png)
