@@ -63,7 +63,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-23
-  ruby "3.2.2"
+  ruby
 
 DEPENDENCIES
   jekyll (~> 4.0.0)
