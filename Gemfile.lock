@@ -65,5 +65,9 @@ PLATFORMS
   arm64-darwin-23
   ruby
 
+DEPENDENCIES
+  jekyll (~> 4.0.0)
+  webrick (~> 1.8)
+
 BUNDLED WITH
    2.5.11
