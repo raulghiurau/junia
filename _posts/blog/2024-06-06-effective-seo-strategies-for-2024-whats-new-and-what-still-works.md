@@ -9,7 +9,7 @@ author: Raul
 publish: true
 title: "Effective SEO Strategies for 2024: What's New and What Still Works"
 duration: 4
-category: blog
+category: world
 tags: seo
 image: ""
 ---
