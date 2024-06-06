@@ -7,7 +7,7 @@ excerpt: Search Engine Optimization (SEO) is an ever-evolving field. As we step
   website at the top of search engine results.
 author: Raul
 publish: true
-title: "Effective SEO Strategies for 2024: What's New and What Still Works"
+title: "SEO Strategies for 2024: What's New and What Still Works"
 duration: 4
 category: blog
 tags: seo
