@@ -24,9 +24,10 @@ collections:
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
       - { lable: 'Author', name: 'author', widget: 'string' }
       - { lable: 'Duration', name: 'duration', widget: 'string' }
-      - { lable: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Category', name: ;category', widget: 'dropdown', options: - label: 'US', value: 'us'  }
+      - { lable: 'Category', name: 'category', widget: 'string', default: 'blog' }
       - { lable: 'Tags', name: 'tags', widget: 'string' }
-      - { lable: 'Image', name: 'image', widget: 'image', required: false }
+      - { lable: 'Image  650 x 350', name: 'image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'client'

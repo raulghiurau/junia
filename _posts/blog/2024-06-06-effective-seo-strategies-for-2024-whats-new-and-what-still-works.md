@@ -7,8 +7,9 @@ excerpt: Search Engine Optimization (SEO) is an ever-evolving field. As we step
   Here’s a look at the latest SEO trends and enduring strategies to keep your
   website at the top of search engine results.
 author: Raul
-duration: "4"
-category: marketing
+duration: 4
+publish: true
+category: blog
 tags: seo
 image: /img/assets/video.jpg
 ---
