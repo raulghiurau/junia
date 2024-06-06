@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Effective SEO Strategies for 2024: What's New and What Still Works"
 date: 2024-06-06T03:24:36.297Z
 excerpt: Search Engine Optimization (SEO) is an ever-evolving field. As we step
   into 2024, staying ahead of the curve is crucial for any digital marketer.
   Here’s a look at the latest SEO trends and enduring strategies to keep your
   website at the top of search engine results.
 author: Raul
-duration: 4
 publish: true
+title: "Effective SEO Strategies for 2024: What's New and What Still Works"
+duration: 4
 category: blog
 tags: seo
-image: /img/assets/video.jpg
+image: /img/assets/learn.jpeg
 ---
 ### What’s New in SEO for 2024?
 
