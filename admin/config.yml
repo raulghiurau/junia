@@ -40,7 +40,7 @@ collections:
         }
      
       - { lable: 'Tags', name: 'tags', widget: 'string' }
-      - { lable: 'Image  650 x 350', name: 'image', widget: 'image', required: false }
+      - { lable: 'Image  650x350', name: 'image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'client'
