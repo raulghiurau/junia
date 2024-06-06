@@ -9,7 +9,7 @@ excerpt: Search Engine Optimization (SEO) is an ever-evolving field. As we step
 author: Raul
 duration: "4"
 category: marketing
-tags: see
+tags: seo
 image: /img/assets/video.jpg
 ---
 ### What’s New in SEO for 2024?
