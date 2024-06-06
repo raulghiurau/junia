@@ -10,6 +10,7 @@ author: Raul
 duration: "4"
 category: marketing
 tags: see
+image: /img/assets/video.jpg
 ---
 ### What’s New in SEO for 2024?
 
