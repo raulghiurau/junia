@@ -27,7 +27,7 @@ collections:
       - { 
           label: 'Category', 
           name: 'category', 
-          widget: 'dropdown', 
+          widget: 'select', 
           options: 
             [
               { label: 'Blog', value: 'blog' },
@@ -40,7 +40,7 @@ collections:
         }
      
       - { lable: 'Tags', name: 'tags', widget: 'string' }
-      - { lable: 'Image  650x350', name: 'image', widget: 'image', required: false }
+      - { lable: 'Image650x350', name: 'image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'client'
