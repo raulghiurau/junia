@@ -331,7 +331,7 @@ aside {
   position: relative;
   width: 100%;
   min-height: auto;
-    background-image: url('../img/header1.jpg');
+    // background-image: url('../img/header1.jpg');
   // @include background-cover;
   background-position: center;
   background-color: #f2f2f2;
@@ -342,7 +342,8 @@ aside {
 }
 
 .mask-page {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.2));
+	background-color: #333;
+  // background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.2));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

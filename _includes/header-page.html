@@ -1,7 +1,9 @@
 <div class="page">
-    <div class="mask-page">
-        {% include nav.html %}
-        <h2 class="page-title mb-1">{{page.title}}</h2>
-        <h6 class="page-title">{{page.description}}</h6>
-        </div>
+	<div class="mask-page">
+		{% include nav.html %}
+		<div class="container">
+			<h2 class="page-title mb-1 mr-auto ml-auto" style="max-width: 700px;">{{page.title}}</h2>
+			<p class="page-title mr-auto ml-auto" style="max-width: 700px; color: #fff;">{{page.description}}</p>
+		</div>
+	</div>
 </div>
