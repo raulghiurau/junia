@@ -7,9 +7,9 @@ description: Projects that i've worked on
 	<div class="container my-5">
     <div class="row">
         {% for post in site.categories.work %}
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
 					<div class="card" style="height: 18rem;">
-						<img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}" style="object-fit: cover; height: 200px;">
+						<img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}" style="object-fit: cover; height: 180px; width: 100%;">
 						<div class="card-body">
 							<h4 class="cart-title">{{post.title}}</h4>
 							
@@ -34,6 +34,7 @@ description: Projects that i've worked on
                         <!-- Modal body -->
                         <div class="modal-body">
 													<p>{{ post.content }}</p>
+													{{ post.video }}
 													<img src="{{ post.image }}" >
                             {{ post.description }}
                         </div>
