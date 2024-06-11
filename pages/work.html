@@ -4,157 +4,51 @@ title: VIEW MY WORK
 description: Projects that i've worked on
 ---
 
-<div class="no-padding" id="portfolio">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/everlastfloors.html">
-                    <img src="/img/assets/everlastbg.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content m-2">
-                            <img src="/img/assets/everlast2.png" width="40%" alt="" class="mb-2">
-                            <div class="project-category">
-                                <!-- Everlast Floors Inc -->
-                                <div class="project-name text-center">
-                                    web, video, design, PPC
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/lastik.html">
-                    <img src="/img/assets/lastikbg.jpg" style="filter: grayscale(100%);" class="img-fluid"
-                        alt="lastikbg">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content m-2">
-                            <img src="/img/assets/Lastik.png" width="35%" alt="lastik" class="mb-2">
-                            <div class="project-category">
-                                <!-- Lastik -->
-                                <div class="project-name text-center">
-                                    branding, web
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/volofloors.html">
-                    <img src="/img/assets/volobg.jpeg" style="filter: grayscale(100%);" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <img src="/img/assets/volo.png" width="30%" alt="" class="mb-2">
-                            <div class="project-category">
-                                <!-- Volo Floors -->
-                                <div class="project-name text-center">
-                                    branding, web
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+	<div class="container my-5">
+    <div class="row">
+        {% for post in site.categories.work %}
+        <div class="col-md-4">
+					<div class="card" style="height: 18rem;">
+						<img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}" style="object-fit: cover; height: 200px;">
+						<div class="card-body">
+							<h4 class="cart-title">{{post.title}}</h4>
+							
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal{{ forloop.index }}">
+                View Project 
+            </button>
+					</div>
+					</div>
 
-            <div class="col-lg-4 col-sm-6 grid-item web photo seo">
-                <a class="portfolio-box" href="/pages/client/mhw.html">
-                    <img src="/img/assets/mhwbg.jpg" style="filter: grayscale(100%);" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category">
-                                <img src="/img/assets/mhw.png" width="30%" alt="" class="mb-2">
-                                <!-- MH & W -->
-                                <div class="project-name text-center">
-                                    web, photo, SEO
-                                </div>
-                            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="modal{{ forloop.index }}">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">{{ post.title }}</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/fad.html">
-                    <img src="/img/assets/FADbg.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category">
-                                <img src="/img/assets/fadlogowhite.png" width="30%" alt="" class="mb-2">
-                                <!-- Filip Architectural Design -->
-                                <div class="project-name">
-                                    web, photos
-                                </div>
-                            </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+													<p>{{ post.content }}</p>
+													<img src="{{ post.image }}" >
+                            {{ post.description }}
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/otrperformance.html">
-                    <img src="/img/assets/otrbg.jpg" style="filter: grayscale(100%);" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category">
-                                <img src="/img/assets/otrlogo.png" width="30%" alt="" class="mb-2">
-                                <!-- OTR performance -->
-                                <div class="project-name">
-                                    web, branding, design, PPC, SEO
-                                </div>
-                            </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
+
                     </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/truckfaults.html">
-                    <img src="/img/assets/TFbg.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category">
-                                <img src="/img/assets/truckfaults.png" width="30%" alt="" class="mb-2">
-                                <!-- Truckfaults -->
-                                <div class="project-name">
-                                    branding, web, design
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/m1ave.html">
-                    <img src="/img/assets/m1avebg.jpg" style="filter: grayscale(100%);" class="img-fluid" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <img src="/img/assets/m1ave.png" width="15%" alt="" class="mb-2">
-                            <div class="project-category">
-                                <!-- M1Ave -->
-                                <div class="project-name">
-                                    SEO, web, branding
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/pages/client/ovsl.html">
-                    <img src="/img/assets/clientImages/ovsl/ovslman.jpg" style="filter: grayscale(100%);"
-                        class="img-fluid" alt="other">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <img src="/img/assets/clientImages/ovsl/logoW.png" width="40%" alt="" class="mb-2">
-                            <div class="project-category">
-                                <!-- Oakland View Senior Living  -->
-                                <div class="project-name">
-                                    video, web, SEO
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
+			
+        {% endfor %}
     </div>
 </div>
 

@@ -62,3 +62,23 @@ collections:
       - { lable: 'Image Logo', name: 'image', widget: 'image', required: false }
       - { lable: 'Background Image', name: 'background-image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'work'
+    label: 'Work'
+    folder: '_posts/work'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'work' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Project Date', name: 'project-date', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+      - { lable: 'Services', name: 'services', widget: 'string' }
+      - { lable: 'Category', name: 'category', widget: 'string', default: 'work' }
+      - { lable: 'Website', name: 'website', widget: 'string' }
+      - { lable: 'Image Logo', name: 'image', widget: 'image', required: false }
+      - { lable: 'Background Image', name: 'background-image', widget: 'image', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
