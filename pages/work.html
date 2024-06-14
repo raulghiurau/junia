@@ -32,16 +32,14 @@ description: Projects that i've worked on
         {% for post in site.categories.work %}
         <div class="col-md-4 mb-4">
 					<div class="card text-center">
-						<img src="{{ post.thumbnail }}" class="card-img-top" alt="{{ post.title }}" style="object-fit: cover; height: 180px; width: 100%;">
-						<div class="card-body">
-							<h5 class="card-title">{{post.title}}</h5>
-							
+						<div class="card-body">					
             <!-- Button to Open the Modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal{{ forloop.index }}">
-                View Project 
-            </button>
+            <a type="button" class="text-center" data-toggle="modal" data-target="#modal{{ forloop.index }}">
+							<img src="{{ post.thumbnail }}" class="card-img-top" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 180px; width: 100%;">
+							<h5 class="card-title">{{post.title}}</h5>
+						</a>
 					</div>
-					</div>
+				</div>
 
             <!-- The Modal -->
             <div class="modal fade" id="modal{{ forloop.index }}">
@@ -50,26 +48,22 @@ description: Projects that i've worked on
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h5 class="modal-title"></h5>
+                            <h5 class="modal-title">{{post.title}}</h5>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
 
                         <!-- Modal body -->
                         <div class="modal-body">
 													{{post.content}}							
-												
 
 													<div class="video-container">
-														<iframe width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
+														<iframe id=video{{forloop.index}} width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
 												</div>	
-												
-													
-													<img src="{{ post.image }}" >
-                          
-													
+										
+												<img src="{{ post.image }}" >
+
                         </div>
 												
-
                         <!-- Modal footer -->
                         <div class="modal-footer text-center">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -84,5 +78,18 @@ description: Projects that i've worked on
     </div>
 </div>
 
+<script>
+  // Use jQuery to handle the modal close event
+  $('[id^="modal"]').on('hidden.bs.modal', function () {
+    var modalId = $(this).attr('id');
+    var videoId = 'video' + modalId.replace('modal', '');
+    var video = $('#' + videoId);
+    if (video.length) {
+      var src = video.attr('src');
+      video.attr('src', ''); // Clear the src attribute
+      video.attr('src', src); // Reset the src attribute
+    }
+  });
+</script>
 
 {% include call-to-action.html %}
