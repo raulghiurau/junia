@@ -62,3 +62,17 @@
   });
 
 })(jQuery); // End of use strict
+
+<script>
+  // Use jQuery to handle the modal close event
+  $('[id^="modal"]').on('hidden.bs.modal', function () {
+    var modalId = $(this).attr('id');
+    var videoId = 'video' + modalId.replace('modal', '');
+    var video = $('#' + videoId);
+    if (video.length) {
+      var src = video.attr('src');
+      video.attr('src', ''); // Clear the src attribute
+      video.attr('src', src); // Reset the src attribute
+    }
+  });
+</script>
