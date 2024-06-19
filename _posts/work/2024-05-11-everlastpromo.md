@@ -1,6 +1,7 @@
 ---
 layout: work
-title: Everlast Video Promo
+title: Topic explainer
+client: Everlast
 project-date: "2019"
 date: 2024-06-10T05:06:47.035Z
 description: Sales video for everlast

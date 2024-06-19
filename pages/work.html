@@ -8,12 +8,13 @@ description: Projects that i've worked on
     <div class="row">
         {% for post in site.categories.work %}
         <div class="col-md-4 mb-4">
-					<div class="card text-center" style="border: none; margin-bottom: 20px;">
+					<div class="card text-center" style="border: none; margin-bottom: 20px; ">
 						<div class="card-body">					
             <!-- Button to Open the Modal -->
             <a type="button" class="text-center" data-toggle="modal" data-target="#modal{{ forloop.index }}">
-							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 180px; width: 100%;">
-							<h4 class="card-title" style="color: black;">{{post.title}}</h4>
+							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 200px; width: 100%; box-shadow: 0px 0px 10px grey; border-radius: 15px;">
+							<h4 class="card-title" style="color: black;">{{ post.client }}</h4>
+							<p>{{ post.title}}</p>
 						</a>
 					</div>
 				</div>
@@ -25,15 +26,15 @@ description: Projects that i've worked on
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h5 class="modal-title">{{post.title}}</h5>
+                            <h5 class="modal-title">{{ post.title }}</h5>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
 
                         <!-- Modal body -->
                         <div class="modal-body">
-													{{post.content}}							
+													{{ post.content }}							
 
-													<div class="video-container">
+												<div class="video-container">
 														<iframe id=video{{forloop.index}} width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
 												</div>	
 										
@@ -50,7 +51,6 @@ description: Projects that i've worked on
                 </div>
             </div>
         </div>
-			
         {% endfor %}
     </div>
 </div>
