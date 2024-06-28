@@ -7,12 +7,12 @@ description: Projects that i've worked on
 	<div class="container my-5">
     <div class="row">
         {% for post in site.categories.work %}
-        <div class="col-md-4 mb-4">
+        <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
 					<div class="card text-center" style="border: none; margin-bottom: 20px; ">
 						<div class="card-body">					
             <!-- Button to Open the Modal -->
             <a type="button" class="text-center" data-toggle="modal" data-target="#modal{{ forloop.index }}">
-							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 200px; width: 100%; box-shadow: 0px 0px 10px grey; ">
+							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 300px; width: 100%; box-shadow: 0px 0px 10px grey; ">
 							<h4 class="card-title" style="color: black;">{{ post.client }}</h4>
 							<p>{{ post.title}}</p>
 						</a>
