@@ -59,7 +59,7 @@ collections:
       - { lable: 'Services', name: 'services', widget: 'string' }
       - { lable: 'Category', name: 'category', widget: 'string', default: 'client' }
       - { lable: 'Website', name: 'website', widget: 'string' }
-      - { lable: 'Image Logo', name: 'image', widget: 'image', required: false }
+      - { lable: 'Image Logo', name: 'image', widget: 'image', required: 'false' }
       - { lable: 'Background Image', name: 'background-image', widget: 'image', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
@@ -73,10 +73,9 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'work' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Project Date', name: 'project-date', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { lable: 'Video Link', name: 'video', widget: 'string', required: 'false' }
+      - { lable: 'Video Link', name: 'video', widget: 'string', required: false }
       - { lable: 'Category', name: 'category', widget: 'string', default: 'work' }
-      - { lable: 'Image', name: 'image', widget: 'image', required: 'false' }
+      - { lable: 'Image', name: 'image', widget: 'image', required: false }
       - { lable: 'Thumbnail', name: 'thumbnail', widget: 'image' }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: 'false' }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
