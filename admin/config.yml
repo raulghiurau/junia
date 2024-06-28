@@ -75,8 +75,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Project Date', name: 'project-date', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { lable: 'Video Link', name: 'video', widget: 'string' }
+      - { lable: 'Video Link', name: 'video', widget: 'string', required: 'false' }
       - { lable: 'Category', name: 'category', widget: 'string', default: 'work' }
-      - { lable: 'Image', name: 'image', widget: 'image', required: false }
-      - { lable: 'Thumbnail', name: 'thumbnail', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { lable: 'Image', name: 'image', widget: 'image', required: 'false' }
+      - { lable: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: 'false' }
