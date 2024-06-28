@@ -34,11 +34,14 @@ description: Projects that i've worked on
                         <div class="modal-body">
 													{{ post.content }}							
 
+												{% if post.video %}
 												<div class="video-container">
-														<iframe id=video{{forloop.index}} width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
-												</div>	
-										
+													<iframe id="video{{ forloop.index }}" width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
+												</div>
+											{% elsif post.image %}
 												<img src="{{ post.image }}" height="315" width="100%">
+											{% endif %}
+									
 
                         </div>
 												

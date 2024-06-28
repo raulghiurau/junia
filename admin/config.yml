@@ -73,6 +73,7 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'work' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { lable: 'Video Link', name: 'video', widget: 'string', required: false }
       - { lable: 'Category', name: 'category', widget: 'string', default: 'work' }
