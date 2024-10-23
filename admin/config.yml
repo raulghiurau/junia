@@ -11,7 +11,7 @@ public-folder: "uploads"
 
 collections:
   - name: 'blog'
-    label: 'blog'
+    label: 'Blog'
     folder: '_posts/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
