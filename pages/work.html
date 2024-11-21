@@ -12,7 +12,7 @@ description: Projects that i've worked on
 						<div class="card-body">					
             <!-- Button to Open the Modal -->
             <a type="button" class="text-center" data-toggle="modal" data-target="#modal{{ forloop.index }}">
-							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 300px; width: 100%; box-shadow: 0px 0px 10px grey; ">
+							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 300px; width: 100%; box-shadow: 0px 0px 12px grey; ">
 							<h4 class="card-title" style="color: black;">{{ post.client }}</h4>
 							<p>{{ post.title}}</p>
 						</a>
@@ -20,7 +20,7 @@ description: Projects that i've worked on
 				</div>
 
             <!-- The Modal -->
-            <div class="modal fade" id="modal{{ forloop.index }}">
+            <div class="modal fade fixed-width-modal" id="modal{{ forloop.index }}">
                 <div class="modal-dialog">
                     <div class="modal-content">
 
@@ -39,7 +39,7 @@ description: Projects that i've worked on
 													<iframe id="video{{ forloop.index }}" width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
 												</div>
 											{% elsif post.image %}
-												<img src="{{ post.image }}" height="315" width="100%">
+												<img src="{{ post.image }}" height="100%" width="100%">
 											{% endif %}
 									
 
@@ -57,6 +57,15 @@ description: Projects that i've worked on
         {% endfor %}
     </div>
 </div>
+
+<style>
+	/* Custom styles for fixed-width modal */
+	.modal.fixed-width-modal .modal-dialog {
+			width: 900px;
+			max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+			margin: auto;
+	}
+	</style>
 
 <script>
   // Use jQuery to handle the modal close event
