@@ -479,6 +479,137 @@ header {
     background-position: bottom;
 }
 
+.design-services {
+    text-align: center;
+    padding: 60px 20px; // Adds spacing above and below the section
+}
+
+.marketing-services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.marketing-services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: $theme-primary;
+}
+
+.marketing-services p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.branding-services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.branding-services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: $theme-primary;
+}
+
+.branding-services p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.ecommerce-services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ecommerce-services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: $theme-primary;
+}
+
+.ecommerce-services p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-us {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: $theme-primary;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-us .btn-primary {
+  background-color: $theme-primary;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: darken($theme-primary, 10%);
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
@@ -492,6 +623,8 @@ header {
 // Button Styles
 .btn-default {
     @include button-variant($theme-dark, white, white);
+    background-color: #D4BB66;
+    border-radius: 3px;
 }
 
 .btn-primary {
@@ -499,13 +632,14 @@ header {
 }
 
 .btn-secondary {
+
     font-family: sofia-pro;
     border: none;
     border-radius: .25rem;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #D4BB66;
-
+    background-color: $theme-secondary;
+    color: white;
     &:hover {
         color: #18274B;
         text-decoration: none;
@@ -544,6 +678,39 @@ header {
 }
 
 // Contact
+.contact-us {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background color */
+  margin-top: 40px;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: $theme-primary; /* Use your primary color */
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-us .btn-primary {
+  background-color: $theme-primary;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: darken($theme-primary, 10%);
+}
+
 #contact .fa {
     color: $theme-dark;
     font-size: 4em;
@@ -581,18 +748,19 @@ body {
     background-color: #f2f2f2;
 }
 
-.video-responsive{
+.video-responsive {
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
 }
-.video-responsive iframe{
+
+.video-responsive iframe {
+    position:absolute;
     left:0;
     top:0;
     height:100%;
     width:100%;
-    position:absolute;
 }
 
 .video-portfolio {
@@ -614,14 +782,12 @@ label {
 }
 
 .grid-item {
-    // width: 100%;
     margin: 0;
     padding: 0;
 }
 
 // portfolio-box
 .portfolio-item {
-    // box-shadow: 0px 0px 200px 2px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -629,10 +795,12 @@ label {
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
 }
+
 #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
   position: relative;
   display: block;
 }
+
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
     display: flex;
     align-items: center;
@@ -645,25 +813,22 @@ label {
     text-align: center;
     opacity: 1;
     color: #fff;
-  // background: linear-gradient(51, 51, 51, 1);
-  // background: rgb(34,34,34, .3);
     background: linear-gradient(45deg, rgba(34,34,34,1) 0%, rgba(87,87,87,.4) 100%);
     transition: height 0.25s ease;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
     font-family: sofia-pro,sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  // text-transform: uppercase;
-  // margin: 10px;
+    font-size: 1rem;
+    font-weight: 500;
 }
+
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
     font-size: .7rem;
     @media (min-width: 768px) {
       font-size: 1rem;
-  }
-  line-height: normal;
+    }
+    line-height: normal;
 }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
@@ -679,6 +844,7 @@ label {
 	background: #000;
 	margin-top: 20px;
 }
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
