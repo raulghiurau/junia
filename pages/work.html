@@ -1,23 +1,23 @@
 ---
 layout: page
 title: VIEW MY WORK
-description: Projects that i've worked on
+description: Projects that I've worked on
 ---
 
-	<div class="container my-5">
+<div class="container my-5">
     <div class="row">
         {% for post in site.categories.work %}
         <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
-					<div class="card text-center" style="border: none; margin-bottom: 20px; ">
-						<div class="card-body">					
-            <!-- Button to Open the Modal -->
-            <a type="button" class="text-center" data-toggle="modal" data-target="#modal{{ forloop.index }}">
-							<img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 300px; width: 100%; ">
-							<h4 class="card-title" style="color: black;">{{ post.client }}</h4>
-							<p>{{ post.title}}</p>
-						</a>
-					</div>
-				</div>
+            <div class="card text-center work-card shadow-sm" style="border: none; margin-bottom: 20px;">
+                <div class="card-body d-flex flex-column">
+                    <!-- Button to Open the Modal -->
+                    <a type="button" class="text-center" data-toggle="modal" data-target="#modal{{ forloop.index }}">
+                        <img src="{{ post.thumbnail }}" class="card-img-top mb-4" alt="{{ post.title }}" style="object-position: top; object-fit: cover; height: 200px; width: 100%;">
+                        <h4 class="card-title" style="color: black;">{{ post.client }}</h4>
+                        <p class="card-text">{{ post.title }}</p>
+                    </a>
+                </div>
+            </div>
 
             <!-- The Modal -->
             <div class="modal fade fixed-width-modal" id="modal{{ forloop.index }}">
@@ -32,19 +32,17 @@ description: Projects that i've worked on
 
                         <!-- Modal body -->
                         <div class="modal-body">
-													{{ post.content }}							
+                            {{ post.content }}
 
-												{% if post.video %}
-												<div class="video-container">
-													<iframe id="video{{ forloop.index }}" width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
-												</div>
-											{% elsif post.image %}
-												<img src="{{ post.image }}" height="100%" width="100%">
-											{% endif %}
-									
-
+                            {% if post.video %}
+                            <div class="video-container">
+                                <iframe id="video{{ forloop.index }}" width="560" height="315" src="{{ post.video }}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            {% elsif post.image %}
+                            <img src="{{ post.image }}" height="100%" width="100%">
+                            {% endif %}
                         </div>
-												
+
                         <!-- Modal footer -->
                         <div class="modal-footer text-center">
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -59,13 +57,40 @@ description: Projects that i've worked on
 </div>
 
 <style>
-	/* Custom styles for fixed-width modal */
-	.modal.fixed-width-modal .modal-dialog {
-			width: 900px;
-			max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-			margin: auto;
-	}
-	</style>
+/* Custom styles for fixed-width modal */
+.modal.fixed-width-modal .modal-dialog {
+    width: 900px;
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    margin: auto;
+}
+
+/* Ensure all cards are the same size */
+.work-card {
+    height: 100%; /* Make all cards the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-card img {
+    height: 200px; /* Set a consistent height for images */
+    object-fit: cover; /* Ensure images are cropped properly */
+}
+
+.work-card .card-body {
+    flex-grow: 1; /* Ensure the card body stretches to fill the card */
+}
+
+.work-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.work-card p {
+    font-size: 1rem;
+    color: #555;
+}
+</style>
 
 <script>
   // Use jQuery to handle the modal close event
