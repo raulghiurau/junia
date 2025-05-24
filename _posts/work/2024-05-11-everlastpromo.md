@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Topic explainer
-client: Everlast
+client: Everlast Floors
 project-date: "2019"
 date: 2024-06-10T05:06:47.035Z
 description: Sales video for everlast
