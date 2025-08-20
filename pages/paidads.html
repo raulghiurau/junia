@@ -1,0 +1,119 @@
+---
+layout: page
+title: Paid Ads Services
+description: Paid advertising solutions for business growth
+---
+
+<section class="paidads-services">
+  <h1>Paid Ads Services</h1>
+  <p>Maximize your reach and ROI with expertly managed paid advertising campaigns. We help you target the right audience, optimize your ad spend, and achieve measurable results across platforms like Google, Meta (Facebook & Instagram), TikTok, Reddit, LinkedIn, Bing, and YouTube.</p>
+
+  <div class="services-grid">
+    <div class="service">
+      <h2>🔍</h2>
+      <h3>Google Ads</h3>
+      <p>Appear at the top of Google search results and across the web with Search, Display, and Shopping campaigns.</p>
+    </div>
+
+    <div class="service">
+      <h2>📱</h2>
+      <h3>Meta Ads (Facebook & Instagram)</h3>
+      <p>Engage your audience on Facebook and Instagram with highly targeted ad campaigns and creative content.</p>
+    </div>
+
+    <div class="service">
+      <h2>🎵</h2>
+      <h3>TikTok Ads</h3>
+      <p>Reach new audiences with short-form video ads on TikTok, designed for high engagement and viral potential.</p>
+    </div>
+
+    <div class="service">
+      <h2>👾</h2>
+      <h3>Reddit Ads</h3>
+      <p>Connect with niche communities and drive conversations with promoted posts and display ads on Reddit.</p>
+    </div>
+
+    <div class="service">
+      <h2>💼</h2>
+      <h3>LinkedIn Ads</h3>
+      <p>Target professionals and decision-makers with sponsored content, InMail, and display ads on LinkedIn.</p>
+    </div>
+
+    <div class="service">
+      <h2>🖥️</h2>
+      <h3>Bing Ads</h3>
+      <p>Expand your reach beyond Google with Bing search and display advertising.</p>
+    </div>
+
+    <div class="service">
+      <h2>▶️</h2>
+      <h3>YouTube Ads</h3>
+      <p>Promote your brand with video ads on YouTube, including in-stream, bumper, and discovery formats.</p>
+    </div>
+
+    <div class="service">
+      <h2>🎯</h2>
+      <h3>Retargeting</h3>
+      <p>Bring back visitors and increase conversions with smart retargeting strategies across all platforms.</p>
+    </div>
+
+    <div class="service">
+      <h2>📊</h2>
+      <h3>Analytics & Optimization</h3>
+      <p>Track performance, analyze results, and continually optimize your campaigns for the best ROI.</p>
+    </div>
+  </div>
+
+  <div class="spacing"></div>
+
+  <h2 class="mt-5 mb-4 text-center">Recent Paid Ads Projects</h2>
+  {% assign paidads_works = site.categories.work | where_exp: "item", "item.title contains 'ads'" %}
+  {% if paidads_works.size > 0 %}
+  <div class="row">
+    {% for work in paidads_works %}
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <a type="button" class="text-center" data-toggle="modal" data-target="#paidadsModal{{ forloop.index }}">
+              {% if work.thumbnail %}
+                <img src="{{ work.thumbnail }}" class="card-img-top mb-3" alt="{{ work.title }}" style="object-fit: cover; height: 200px;">
+              {% endif %}
+              <h5 class="card-title">{{ work.title }}</h5>
+              <p class="card-text">{{ work.description }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for each paid ads work -->
+      <div class="modal fade" id="paidadsModal{{ forloop.index }}">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ work.title }}</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              {% if work.image %}
+                <img src="{{ work.image }}" class="img-fluid mb-3" alt="{{ work.title }}">
+              {% endif %}
+              <p>{{ work.description }}</p>
+            </div>
+            <div class="modal-footer text-center">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="text-center">No recent paid ads projects found.</p>
+  {% endif %}
+</section>
+
+<section class="contact-us">
+  <h2>Contact Us</h2>
+  <p>Ready to grow your business with paid ads? Get in touch with us today!</p>
+  <a href="/pages/contact.html" class="btn btn-primary">Get Started</a>
+</section>

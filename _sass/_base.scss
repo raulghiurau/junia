@@ -478,12 +478,11 @@ header {
     background-position: bottom;
 }
 
-
-
 .design-services,
 .email-services,
 .video-services,
-.web-development-services {
+.web-development-services,
+.paidads-services {
     text-align: center;
     padding: 40px 20px;
     max-width: 800px;
@@ -493,7 +492,8 @@ header {
 .design-services h1,
 .email-services h1,
 .video-services h1,
-.web-development-services h1 {
+.web-development-services h1,
+.paidads-services h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: $theme-primary;
@@ -502,7 +502,8 @@ header {
 .design-services p,
 .email-services p,
 .video-services p,
-.web-development-services p {
+.web-development-services p,
+.paidads-services p {
     font-size: 1.2rem;
     margin-bottom: 40px;
     color: #555;
