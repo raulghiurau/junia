@@ -57,10 +57,59 @@ description: Sell online.
       <p>Utilize AI-powered tools and analytics to optimize your eCommerce strategy and achieve measurable results.</p>
     </div>
   </div>
+
+<div class="spacing"></div>
+
+<h2 class="mt-5 mb-4 text-center">Recent eCommerce Projects</h2>
+{% assign ecommerce_works = site.categories.work | where_exp: "item", "item.title 
+contains 'ecommerce' or item.title contains 'Ecommerce'" %}
+{% if ecommerce_works.size > 0 %}
+<div class="row">
+  {% for work in ecommerce_works %}
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <a type="button" class="text-center" data-toggle="modal" data-target="#ecommerceModal{{ forloop.index }}">
+            {% if work.thumbnail %}
+              <img src="{{ work.thumbnail }}" class="card-img-top mb-3 thumbnail-img" alt="{{ work.title }}">
+            {% endif %}
+            <h5 class="card-title">{{ work.title }}</h5>
+            <p class="card-text">{{ work.description }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for each ecommerce work -->
+    <div class="modal fade" id="ecommerceModal{{ forloop.index }}">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ work.title }}</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            {% if work.image %}
+              <img src="{{ work.image }}" class="img-fluid mb-3" alt="{{ work.title }}">
+            {% endif %}
+            <p>{{ work.description }}</p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-center">We currently have no recent eCommerce projects to showcase. Check back soon!</p>
+{% endif %}
+
 </section>
 
 <section class="contact-us">
   <h2>Contact Us</h2>
   <p>Ready to take your eCommerce business to the next level? Get in touch with us today to start growing your online store!</p>
-  <a href="/pages/contact.html" class="btn btn-primary">Get Started</a>
+  <a href="{{ site.baseurl }}/pages/contact.html" class="btn btn-primary">Get Started</a>
 </section>

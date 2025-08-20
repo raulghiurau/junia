@@ -1,0 +1,91 @@
+---
+layout: page
+title: Email marketing
+description: Email and SMS services
+---
+
+<section class="email-services">
+  <h1>Email & SMS Marketing Services</h1>
+  <p>Reach your audience directly with targeted email and SMS campaigns. We help you build, automate, and optimize communications that drive engagement and conversions. Explore our specialized services below:</p>
+
+  <div class="services-grid">
+    <div class="service">
+      <h2>📧</h2>
+      <h3>Email Campaigns</h3>
+      <p>Design and send beautiful, responsive emails that engage your subscribers and drive results.</p>
+    </div>
+
+    <div class="service">
+      <h2>📱</h2>
+      <h3>SMS Marketing</h3>
+      <p>Deliver timely, personalized messages straight to your customers’ phones for instant impact.</p>
+    </div>
+
+    <div class="service">
+      <h2>🔄</h2>
+      <h3>Automation & Workflows</h3>
+      <p>Set up automated sequences for onboarding, nurturing, and re-engagement to save time and boost ROI.</p>
+    </div>
+
+    <div class="service">
+      <h2>📊</h2>
+      <h3>Analytics & Reporting</h3>
+      <p>Track open rates, clicks, conversions, and more to continually improve your campaigns.</p>
+    </div>
+  </div>
+
+  <div class="spacing"></div>
+
+<h2 class="mt-5 mb-4 text-center">Recent Email & SMS Projects</h2>
+{% assign email_works = site.categories.work | where_exp: "item", "item.title contains 'email' or item.title contains 'Email'" %}
+{% if email_works.size > 0 %}
+<div class="row">
+  {% for work in email_works %}
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body d-flex flex-column">
+          <a type="button" class="text-center" data-toggle="modal" data-target="#emailModal{{ forloop.index }}">
+            {% if work.thumbnail %}
+              <img src="{{ work.thumbnail }}" class="card-img-top mb-3" alt="{{ work.title }}" style="object-fit: cover; height: 200px;">
+            {% endif %}
+            <h5 class="card-title">{{ work.title }}</h5>
+            <p class="card-text">{{ work.description }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for each email work -->
+    <div class="modal fade" id="emailModal{{ forloop.index }}">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ work.title }}</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            {% if work.image %}
+              <img src="{{ work.image }}" class="img-fluid mb-3" alt="{{ work.title }}">
+            {% endif %}
+            <p>{{ work.description }}</p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-center">No recent email or SMS projects found.</p>
+{% endif %}
+
+
+</section>
+
+<section class="contact-us">
+  <h2>Contact Us</h2>
+  <p>Ready to boost your business with email and SMS marketing? Get in touch with us today!</p>
+  <a href="/pages/contact.html" class="btn btn-primary">Get Started</a>
+</section>
