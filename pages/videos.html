@@ -33,10 +33,68 @@ description: Get videos done.
       <p>Distribute your videos across platforms like websites, social media, TV, and more to maximize reach.</p>
     </div>
   </div>
+	
+<br><br>
+  <h2>Recent Video Projects</h2>
+  {% assign video_works = site.categories.work | where_exp: "item", "item.video != nil and item.video != ''" %}
+  {% if video_works.size > 0 %}
+  <div class="row">
+    {% for work in video_works %}
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <a type="button" class="text-center" data-toggle="modal" data-target="#videoModal{{ forloop.index }}">
+              {% if work.thumbnail %}
+                <img src="{{ work.thumbnail }}" class="card-img-top mb-3" alt="{{ work.title }}" style="object-fit: cover; height: 200px;">
+              {% endif %}
+              <h5 class="card-title">{{ work.title }}</h5>
+              <p class="card-text">{{ work.description }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for each video work -->
+      <div class="modal fade" id="videoModal{{ forloop.index }}">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ work.title }}</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="video-container mb-2">
+                <iframe class="video-iframe" width="100%" height="315" src="{{ work.video }}" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <p>{{ work.description }}</p>
+            </div>
+            <div class="modal-footer text-center">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>No recent video projects found.</p>
+  {% endif %}
+
 </section>
+
 
 <section class="contact-us">
   <h2>Contact Us</h2>
   <p>Ready to bring your vision to life? Get in touch with us today to start creating impactful videos!</p>
   <a href="/pages/contact.html" class="btn btn-primary">Get Started</a>
 </section>
+
+<script>
+  $(document).ready(function() {
+    $('.modal').on('hidden.bs.modal', function () {
+      var $iframe = $(this).find('.video-iframe');
+      $iframe.attr('src', $iframe.attr('src'));
+    });
+  });
+</script>
+
