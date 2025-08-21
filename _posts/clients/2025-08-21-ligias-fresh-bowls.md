@@ -8,6 +8,6 @@ services: web, design
 category: client
 website: https://www.ligiasfreshbowls.com
 image: /img/assets/ligialogow.png
-background-image: /img/assets/bowls.jpg
+background-image: /img/assets/bowls-copy.jpg
 ---
 ![](/img/assets/ligias_fresh_bowls_aug-20-220837-2025_conflict.jpg)
