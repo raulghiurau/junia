@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is branding?
-date: 2020-04-05 19:41 -0400
+date: 2023-02-03T05:00:00.000Z
 permalink: branding
 author: Raul
 tags: branding

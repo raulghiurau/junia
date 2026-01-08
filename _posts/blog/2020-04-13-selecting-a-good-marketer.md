@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to select a good marketing consultant?
-date: 2020-01-19 19:41 -0400
+date: 2023-03-03T05:00:00.000Z
 permalink: selecting-a-good-marketer
 author: Raul
 tags: results tracking strategy
